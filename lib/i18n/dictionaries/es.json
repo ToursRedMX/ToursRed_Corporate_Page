@@ -1,0 +1,1197 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Quiénes somos",
+    "ourHistory": "Nosotros",
+    "howItWorks": "Cómo funciona",
+    "sustainability": "Sostenibilidad",
+    "services": "Nuestros Servicios",
+    "nationalTours": "Tours Nacionales",
+    "internationalTours": "Tours Internacionales",
+    "megaTravel": "Mega Travel",
+    "nefertariTravel": "Nefertari Travel",
+    "exoticca": "Exoticca",
+    "otherAgencies": "Otras Agencias",
+    "otherTours": "Otros Tours",
+    "viator": "Tours y experiencias con Viator",
+    "civitatis": "Tours y actividades con Civitatis",
+    "carRental": "Renta un Auto",
+    "travelInsurance": "Asegura tu viaje",
+    "esim": "ESIM de Viaje",
+    "servicesForTravelers": "Otros Servicios Para Viajeros",
+    "customItineraries": "Armado de itinerarios a la medida",
+    "customPackages": "Paquetes de Viajes a la medida",
+    "transportQuotes": "Cotización de transporte",
+    "servicesForAgencies": "Otros Servicios Para Agencias",
+    "logoDesign": "Diseño de logotipo",
+    "webDevelopment": "Desarrollo de página web",
+    "rntConsulting": "Consultoría para obtener el RNT",
+    "sasConsulting": "Consultoría para dar de alta la agencia como SAS",
+    "travelProducts": "Artículos de Viaje",
+    "blog": "Blog",
+    "press": "Prensa",
+    "contact": "Contacto",
+    "becomePartner": "Quiero ser agencia aliada"
+  },
+  "home": {
+    "hero": {
+      "title": "Historias que comienzan con un tour",
+      "subtitle": "Descubre experiencias únicas en México y reserva directamente con agencias locales de confianza.",
+      "ctaPrimary": "Explorar experiencias",
+      "ctaSecondary": "Únete como agencia"
+    },
+    "whyUs": {
+      "title": "¿Por qué ToursRed?",
+      "feature1": {
+        "title": "Tours y Experiencias Verificadas",
+        "description": "Cada tour y experiencia publicada proviene de agencias y operadores validados, y es revisado para asegurar información clara, condiciones transparentes y calidad en el servicio."
+      },
+      "feature2": {
+        "title": "Soporte al Viajero",
+        "description": "Estamos contigo antes, durante y después de tu viaje con atención personalizada."
+      },
+      "feature3": {
+        "title": "Precios Transparentes",
+        "description": "Sin cargos ocultos. Desde el inicio sabes qué incluye tu reserva y bajo qué condiciones se realiza el pago."
+      }
+    },
+    "forTravelers": {
+      "title": "Para Viajeros",
+      "subtitle": "Descubre experiencias auténticas en México, ofrecidas por agencias y guías locales, con procesos de reserva claros y seguros.",
+      "badge": "+10,000",
+      "badgeText": "Viajeros felices",
+      "benefit1": "Acceso a Tours y experiencias en todo México",
+      "benefit2": "Reservas fáciles y seguras",
+      "benefit3": "Agencias y guías locales",
+      "benefit4": "Políticas de cancelación claras, definidas desde el inicio"
+    },
+    "forAgencies": {
+      "title": "Para Agencias",
+      "subtitle": "Forma parte de ToursRed y llega a más viajeros sin complicaciones.",
+      "badge": "+500",
+      "badgeText": "Agencias aliadas",
+      "benefit1": "Publica gratis y sin costos fijos. Solo cobramos comisión por cada reserva finalizada.",
+      "benefit2": "Panel de gestión sencillo para administrar experiencias, reservas y pagos.",
+      "benefit3": "Acompañamiento y capacitación para ayudarte a vender más en línea.",
+      "benefit4": "Promoción y visibilidad de tus experiencias dentro de ToursRed.",
+      "cta": "Quiero ser agencia aliada"
+    },
+    "trust": {
+      "title": "Confía en ToursRed",
+      "subtitle": "Tu viaje respaldado por una empresa formalmente registrada y reconocida por organismos turísticos oficiales",
+      "item1": { "title": "Empresa legalmente constituida en México", "description": "Sociedad registrada y operando conforme a la legislación mexicana." },
+      "item2": { "title": "Registro Nacional de Turismo (RNT)", "description": "Inscritos ante SECTUR como prestador de servicios turísticos." },
+      "item3": { "title": "Cédula Turística de la Ciudad de México", "description": "Autorizados por la Secretaría de Turismo de la CDMX." },
+      "item4": { "title": "Afiliados a AMAV y FEMATUR", "description": "Miembros y socios activos de la Asociación Mexicana de Agencias de Viajes y de la Federación Mexicana de Asociaciones Turísticas." },
+      "item5": { "title": "Marca registrada ante el IMPI", "description": "ToursRed es una marca protegida legalmente en México." },
+      "item6": { "title": "Pagos seguros y protegidos", "description": "Procesamiento mediante plataformas certificadas." }
+    },
+    "cta": {
+      "title": "¿Listo para comenzar tu historia?",
+      "ctaPrimary": "Explorar experiencias",
+      "ctaSecondary": "Quiero Ser Agencia Aliada"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Quiénes Somos",
+      "subtitle": "En ToursRed conectamos viajeros con experiencias reales, creadas por agencias locales"
+    },
+    "whatIs": {
+      "title": "¿Qué es ToursRed?",
+      "description": "ToursRed es una plataforma mexicana que conecta viajeros con agencias locales para descubrir y reservar experiencias auténticas en todo México.\n\nToursRed no opera directamente los tours.\nLas experiencias publicadas son creadas y operadas por agencias aliadas, mientras ToursRed facilita el proceso de búsqueda, reserva y contacto de forma sencilla y segura.\n\nNuestro objetivo es impulsar el turismo local, brindando a las agencias una vitrina digital para crecer y a los viajeros una forma confiable de descubrir nuevas experiencias.",
+      "feature1": "Plataforma digital de intermediación",
+      "feature1Description": "Conectamos viajeros y agencias a través de un sistema de reservas sencillo y transparente.",
+      "feature2": "Red de agencias y operadores validados",
+      "feature2Description": "Colaboramos con prestadores de servicios turísticos formalmente establecidos.",
+      "feature3": "Empresa 100% mexicana",
+      "feature3Description": "Comprometidos con el desarrollo del turismo local."
+    },
+    "purpose": {
+      "title": "Nuestro Propósito",
+      "description": "Facilitar el acceso a experiencias auténticas en México, conectando viajeros con agencias locales y fortaleciendo el turismo regional."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Conectar a viajeros con experiencias reales a través de una plataforma digital que permita a las agencias locales promocionar y vender sus tours de forma sencilla y segura."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Convertirnos en la plataforma de referencia en México para descubrir y reservar experiencias turísticas locales, impulsando un ecosistema más justo y transparente."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "collaboration": {
+        "title": "Colaboración",
+        "description": "Creemos en el crecimiento conjunto con agencias y operadores turísticos locales."
+      },
+      "commitment": {
+        "title": "Compromiso",
+        "description": "Estamos comprometidos con el desarrollo del turismo responsable y las comunidades locales."
+      },
+      "trust": {
+        "title": "Confianza",
+        "description": "Construimos relaciones basadas en formalidad, cumplimiento y atención cercana."
+      },
+      "transparency": {
+        "title": "Transparencia",
+        "description": "Actuamos con claridad en precios, procesos y condiciones para viajeros y agencias."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "description": "Creamos herramientas digitales simples e innovadoras que facilitan la venta y reserva de experiencias."
+      }
+    },
+    "brands": {
+      "title": "Nuestro Ecosistema de Marcas",
+      "subtitle": "Marcas que operamos y administramos",
+      "natureStayHub": {
+        "name": "Nature Stay Hub",
+        "description": "Conectamos viajeros con experiencias de hospedaje en cabañas, glamping y campings, ubicados en entornos naturales privilegiados de México.",
+        "features": "Cabañas • Glamping • Camping • Ecoturismo",
+        "cta": "Descubrir Nature Stay Hub",
+        "hostCta": "¿Eres anfitrión de un alojamiento natural? Te estamos buscando",
+        "hostButton": "Regístralo aquí",
+        "legal": "Nature Stay Hub es una marca operada por TOURS RED GLOBAL SAS DE CV"
+      }
+    },
+    "partners": {
+      "title": "Socios y Aliados Estratégicos",
+      "subtitle": "Trabajamos con los mejores operadores turísticos",
+      "disclaimer": {
+        "title": "Importante",
+        "text": "ToursRed actúa como intermediario tecnológico. Los tours y experiencias son operados directamente por nuestros socios estratégicos, quienes son responsables de la prestación del servicio turístico."
+      },
+      "megatravel": {
+        "name": "Mega Travel",
+        "description": "Líder en tours y experiencias premium en destinos mexicanos"
+      },
+      "exoticca": {
+        "name": "Exoticca",
+        "description": "Especialista en paquetes turísticos y viajes organizados"
+      }
+    },
+    "compliance": {
+      "title": "Cumplimiento y Respaldo Legal",
+      "subtitle": "Operamos con todos los permisos y registros requeridos",
+      "rnt": {
+        "title": "Registro Nacional de Turismo",
+        "description": "Registrados ante la Secretaría de Turismo de México",
+        "number": "RNT: En trámite"
+      },
+      "impi": {
+        "title": "Marca Registrada IMPI",
+        "description": "ToursRed es una marca registrada ante el Instituto Mexicano de la Propiedad Industrial",
+        "number": "Registro en proceso"
+      }
+    },
+    "team": {
+      "title": "Nuestro Equipo",
+      "description": "Un equipo apasionado por el turismo y la tecnología, comprometido con crear experiencias memorables."
+    }
+  },
+  "howItWorks": {
+    "hero": {
+      "title": "Cómo Funciona",
+      "subtitle": "Un proceso sencillo para descubrir y reservar experiencias"
+    },
+    "whatWeDo": {
+      "title": "Qué Hace ToursRed",
+      "subtitle": "ToursRed conecta viajeros con experiencias operadas por agencias locales formalmente registradas.",
+      "feature1": {
+        "title": "Promocionamos experiencias de agencias locales",
+        "description": "Damos visibilidad a tours y experiencias creadas por agencias aliadas dentro de nuestra plataforma"
+      },
+      "feature2": {
+        "title": "Facilitamos el proceso de reserva",
+        "description": "Conectamos viajeros y agencias para realizar reservas de forma clara y digital."
+      },
+      "feature3": {
+        "title": "Promovemos experiencias confiables",
+        "description": "Trabajamos con agencias formalmente registradas y fomentamos procesos transparentes."
+      }
+    },
+    "whatWeDont": {
+      "title": "Qué No Hace ToursRed",
+      "description": "ToursRed no opera tours directamente ni presta servicios turísticos.\n\nLas experiencias son creadas y operadas por agencias aliadas, quienes son responsables de la prestación del servicio.\n\nToursRed actúa únicamente como plataforma digital de intermediación."
+    },
+    "forTravelers": {
+      "title": "Para Viajeros",
+      "subtitle": "Tu próxima aventura está a solo 4 pasos",
+      "step1": {
+        "number": "1",
+        "title": "Explora",
+        "description": "Navega por cientos de experiencias únicas en todo México."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Reserva",
+        "description": "Selecciona tu tour y reserva de forma sencilla."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Disfruta tu experiencia",
+        "description": "Vive tu tour directamente con la agencia operadora."
+      },
+      "step4": {
+        "number": "4",
+        "title": "Comparte tu historia",
+        "description": "Cuéntanos tu experiencia y ayuda a otros viajeros."
+      },
+      "banner": {
+        "title": "Experiencias que transforman",
+        "description": "Cada tour es una oportunidad para crear memorias inolvidables y descubrir la riqueza de México."
+      }
+    },
+    "forAgencies": {
+      "title": "Para Agencias",
+      "subtitle": "Crece tu negocio con nuestra red",
+      "step1": {
+        "number": "1",
+        "title": "Regístrate",
+        "description": "Completa tu solicitud como agencia aliada."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Revisión",
+        "description": "Nuestro equipo verifica tu documentación."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Publica",
+        "description": "Accede a la plataforma y comienza a publicar tus experiencias."
+      },
+      "step4": {
+        "number": "4",
+        "title": "Vende",
+        "description": "Recibe reservas y haz crecer tu negocio."
+      },
+      "cta": "Quiero ser agencia aliada"
+    },
+    "questions": {
+      "title": "¿Tienes más preguntas?",
+      "description": "Estamos aquí para ayudarte. Contáctanos y resolveremos todas tus dudas.",
+      "cta": "Contacto"
+    }
+  },
+  "sustainability": {
+    "hero": {
+      "title": "Sostenibilidad",
+      "subtitle": "Comprometidos con un turismo responsable y sustentable"
+    },
+    "approach": {
+      "title": "Nuestro enfoque",
+      "intro": "En ToursRed creemos que el turismo debe generar un impacto positivo en los destinos que visitamos.",
+      "description": "Como plataforma de intermediación, nuestro rol no es operar experiencias, sino fomentar prácticas responsables entre viajeros y agencias, promoviendo un turismo más consciente, justo y respetuoso con las comunidades locales y el entorno natural."
+    },
+    "pillars": {
+      "title": "Pilares del turismo responsable",
+      "environmental": {
+        "title": "Ambiental",
+        "description": "Promovemos prácticas responsables que ayuden a minimizar el impacto ambiental de las experiencias turísticas."
+      },
+      "social": {
+        "title": "Social",
+        "description": "Impulsamos experiencias que respeten la cultura local y fomenten relaciones justas con las comunidades anfitrionas."
+      },
+      "economic": {
+        "title": "Económico",
+        "description": "Apoyamos un modelo de turismo que genere beneficios reales y sostenibles para agencias y economías locales."
+      }
+    },
+    "actions": {
+      "title": "Nuestras acciones",
+      "action1": "Fomento de prácticas responsables entre agencias aliadas",
+      "action2": "Promoción de experiencias operadas por prestadores formalmente establecidos",
+      "action3": "Difusión de buenas prácticas para viajeros antes y después de cada experiencia",
+      "action4": "Colaboración con agencias comprometidas con el turismo local y responsable"
+    },
+    "travelerManifesto": {
+      "title": "Manifiesto del viajero ToursRed",
+      "intro1": "Viajar es mucho más que moverse de un lugar a otro.",
+      "intro2": "Es conocer, respetar y conectar con nuevas culturas, personas y entornos.",
+      "intro3": "En ToursRed creemos que cada viaje es una oportunidad para crear historias positivas.",
+      "inviteText": "Por eso invitamos a nuestros viajeros a:",
+      "points": [
+        "Informarse antes de cada experiencia",
+        "Respetar las tradiciones, costumbres y espacios locales",
+        "Cuidar el entorno natural y reducir su impacto ambiental",
+        "Apoyar la economía local siempre que sea posible",
+        "Cumplir las normas de cada destino y experiencia",
+        "Viajar con empatía, responsabilidad y mente abierta",
+        "Compartir sus experiencias de forma honesta"
+      ],
+      "closing": "Porque viajar responsablemente también es parte del camino."
+    },
+    "agencyPrinciples": {
+      "title": "Principios para agencias aliadas",
+      "intro": "En ToursRed colaboramos con agencias y operadores turísticos comprometidos con ofrecer experiencias auténticas y responsables.",
+      "expectation": "Al formar parte de nuestra red, esperamos que nuestras agencias aliadas:",
+      "points": [
+        "Operen sus experiencias de forma profesional y transparente",
+        "Brinden información clara sobre precios, servicios y condiciones",
+        "Respeten la cultura, comunidades y entorno donde operan",
+        "Cumplan con la normativa aplicable al sector turístico",
+        "Mantengan comunicación honesta con los viajeros",
+        "Promuevan prácticas responsables dentro de sus experiencias",
+        "Actúen con integridad en cada interacción"
+      ],
+      "goal": "Nuestro objetivo es construir, juntos, un ecosistema turístico más justo, confiable y sostenible."
+    },
+    "future": {
+      "title": "Compromiso del equipo ToursRed",
+      "paragraph1": "En ToursRed somos un equipo impulsado por la pasión por viajar, la tecnología y el impacto positivo.",
+      "paragraph2": "Trabajamos todos los días con un mismo propósito: conectar personas con experiencias auténticas, fortalecer a las agencias locales y construir un ecosistema turístico más justo y transparente.",
+      "paragraph3": "Nos guiamos por la colaboración, la innovación y la integridad.\nValoramos la diversidad, promovemos relaciones honestas y creemos en hacer lo correcto, incluso cuando nadie está mirando.",
+      "paragraph4": "Cada decisión que tomamos busca generar valor real para viajeros, agencias y comunidades.",
+      "paragraph5": "Porque detrás de cada tour hay personas.\nY detrás de ToursRed hay un equipo comprometido con hacer las cosas bien."
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Noticias, consejos y tendencias del turismo"
+    },
+    "latest": "Últimas publicaciones",
+    "readMore": "Leer más",
+    "backToList": "Volver al blog",
+    "publishedOn": "Publicado el",
+    "by": "por",
+    "tags": "Etiquetas",
+    "relatedPosts": "Artículos relacionados",
+    "noPosts": "No hay artículos disponibles en este momento."
+  },
+  "press": {
+    "hero": {
+      "title": "Prensa",
+      "subtitle": "Sala de prensa y comunicados"
+    },
+    "latest": "Últimos comunicados",
+    "readMore": "Leer más",
+    "backToList": "Volver a prensa",
+    "publishedOn": "Publicado el",
+    "by": "por",
+    "tags": "Etiquetas",
+    "noPosts": "No hay comunicados disponibles en este momento.",
+    "contact": {
+      "title": "Contacto de prensa",
+      "description": "Para consultas de prensa, por favor contacta a:",
+      "email": "contacto@toursred.com"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contacto",
+      "subtitle": "Estamos aquí para ayudarte"
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "fullName": "Nombre completo",
+      "email": "Correo electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
+      "subjectOptions": {
+        "general": "Consulta general",
+        "support": "Soporte técnico",
+        "partnership": "Alianzas comerciales",
+        "other": "Otro"
+      }
+    },
+    "otherWays": {
+      "title": "Otras formas de contacto",
+      "emailLabel": "Email",
+      "phoneLabel": "Teléfono",
+      "scheduleLabel": "Horario",
+      "schedule": "Lunes a Viernes: 9:00 - 18:00 CST",
+      "locationLabel": "Ubicación",
+      "location": "Ciudad de México, México"
+    },
+    "info": {
+      "email": "contacto@toursred.com",
+      "phone": "+52 55 47127668",
+      "address": "Av. Homero 229-501, Polanco"
+    },
+    "agency": {
+      "title": "¿Eres agencia de viajes?",
+      "description": "Únete a nuestra red de agencias aliadas y haz crecer tu negocio.",
+      "button": "Quiero ser agencia aliada"
+    }
+  },
+  "legal": {
+    "hero": {
+      "title": "Información Legal",
+      "subtitle": "Términos, condiciones y políticas"
+    },
+    "notice": {
+      "title": "Aviso Legal",
+      "lastUpdate": "Última actualización: Febrero 2026",
+      "paragraph1": "Este sitio web es operado por TOURS RED GLOBAL S.A.S. DE C.V., con RFC: TRG250711JWA y domicilio fiscal en México (en adelante \"ToursRed\").",
+      "paragraph2": "El acceso y uso del sitio implica la aceptación plena de los presentes Términos, Aviso de Privacidad y Política de Cookies.",
+      "paragraph3": "ToursRed es una plataforma digital de carácter informativo y comercial que conecta viajeros con agencias, mayoristas y proveedores turísticos independientes.",
+      "responsibility": {
+        "title": "Responsabilidad de los Proveedores",
+        "intro": "ToursRed no opera directamente los tours ni servicios turísticos, salvo que se indique expresamente. Cada proveedor es responsable de:",
+        "item1": "La operación del servicio",
+        "item2": "Atención al cliente",
+        "item3": "Cambios, cancelaciones y reembolsos",
+        "item4": "Cumplimiento de normativas aplicables",
+        "footer": "ToursRed actúa únicamente como intermediario tecnológico y comercial."
+      },
+      "intellectualProperty": "El contenido del sitio (textos, imágenes, logotipos, marcas y diseño) es propiedad de ToursRed o de sus respectivos titulares y está protegido por la legislación vigente. Queda prohibida su reproducción sin autorización."
+    },
+    "sections": {
+      "readMore": "Leer más",
+      "backToLegal": "Volver a Aviso Legal",
+      "terms": {
+        "title": "Términos y Condiciones",
+        "content": "<h2>TÉRMINOS Y CONDICIONES GENERALES DE USO</h2><h3>TOURS RED GLOBAL S.A.S. DE C.V.</h3><p><strong>Última actualización:</strong> Febrero 2026</p><h3>1. Información general</h3><p>El presente documento regula el acceso y uso del sitio web operado por TOURS RED GLOBAL S.A.S. DE C.V., sociedad constituida conforme a las leyes de los Estados Unidos Mexicanos, con RFC TRG250711JWA (en adelante, \"ToursRed\").</p><p>Correo electrónico de contacto: <a href='mailto:contacto@toursred.com'>contacto@toursred.com</a></p><p>Sitio web: <a href='https://www.toursred.com'>https://www.toursred.com</a></p><p>ToursRed pone a disposición de los usuarios su sitio web corporativo con la finalidad de ofrecer información turística, facilitar el contacto con agencias, mayoristas y proveedores de servicios turísticos, así como prestar servicios de intermediación comercial y tecnológica.</p><h3>2. Aceptación de los términos</h3><p>El acceso, navegación o uso del sitio web implica la aceptación expresa y sin reservas de los presentes Términos y Condiciones Generales.</p><p>Si el Usuario no está de acuerdo con alguno de los términos aquí establecidos, deberá abstenerse de utilizar el sitio.</p><h3>3. Objeto del sitio web</h3><p>ToursRed ha desarrollado su sitio web como una plataforma corporativa e informativa destinada a:</p><ul><li>Presentar sus servicios y alianzas estratégicas.</li><li>Facilitar cotizaciones y solicitudes de información turística.</li><li>Conectar a viajeros con agencias, mayoristas y proveedores independientes.</li><li>Ofrecer servicios complementarios como armado de itinerarios, seguros de viaje y consultoría para agencias.</li></ul><h3>4. Naturaleza del servicio (intermediación)</h3><p>ToursRed actúa exclusivamente como intermediario tecnológico y comercial.</p><p>Salvo indicación expresa, ToursRed no organiza, opera ni ejecuta directamente los servicios turísticos publicados o promocionados a través del sitio.</p><p>Los tours, viajes, traslados, hospedajes, seguros y demás servicios son prestados directamente por terceros independientes (en adelante, los \"Proveedores\").</p><p>El contrato del servicio turístico se celebra directamente entre el Usuario y el Proveedor correspondiente.</p><p>ToursRed se limita a facilitar el contacto, canalizar solicitudes, y en su caso, intermediar comercialmente.</p><h3>5. Usuarios del sitio</h3><p>Podrán hacer uso del sitio personas físicas o morales interesadas en servicios turísticos o en colaborar con ToursRed.</p><p>El Usuario se obliga a proporcionar información veraz, completa y actualizada, y a utilizar el sitio de forma lícita.</p><p>Queda prohibido:</p><ul><li>Suplantar identidades.</li><li>Proporcionar datos falsos.</li><li>Utilizar el sitio con fines fraudulentos o ilegales.</li></ul><p>ToursRed se reserva el derecho de restringir el acceso a Usuarios que incumplan estas condiciones.</p><h3>6. Servicios actualmente disponibles</h3><p>En esta etapa corporativa, ToursRed ofrece principalmente:</p><ul><li>Información turística.</li><li>Cotizaciones personalizadas.</li><li>Referencias a viajes operados por terceros.</li><li>Venta de servicios a través de socios estratégicos.</li><li>Armado de itinerarios.</li><li>Seguros de viaje mediante proveedores externos.</li><li>Servicios profesionales para agencias (consultoría, diseño y acompañamiento).</li></ul><p>La plataforma de reservas directas se encuentra en desarrollo.</p><h3>7. Servicios de terceros</h3><p>Todos los servicios turísticos son responsabilidad directa del Proveedor.</p><p>ToursRed no garantiza disponibilidad, calidad, resultados, ni cumplimiento del servicio contratado.</p><p>Cualquier reclamación relacionada con la ejecución del servicio deberá realizarse directamente con el Proveedor.</p><h3>8. Reservas, pagos y facturación</h3><p>Cuando aplique, los pagos podrán realizarse directamente al Proveedor o a través de plataformas externas.</p><p>ToursRed podrá recibir comisiones por referidos o intermediación.</p><p>Las políticas de cobro, facturación, cancelación y reembolso dependerán de cada Proveedor.</p><h3>9. Cancelaciones y reembolsos</h3><p>Cada servicio cuenta con políticas propias establecidas por el Proveedor.</p><p>ToursRed podrá asistir como enlace, pero no es responsable de la aprobación o rechazo de cancelaciones.</p><h3>10. Exclusión de responsabilidad</h3><p>ToursRed no será responsable por:</p><ul><li>Accidentes, lesiones o daños personales.</li><li>Pérdidas o robos de objetos personales.</li><li>Cambios de itinerario.</li><li>Condiciones climatológicas.</li><li>Incumplimientos del Proveedor.</li><li>Falta de puntualidad del Usuario.</li><li>Calidad del servicio contratado.</li><li>Daños indirectos, lucro cesante o pérdidas económicas.</li></ul><p>El Usuario acepta que cualquier reclamación deberá dirigirse al Proveedor correspondiente.</p><h3>11. Fuerza mayor</h3><p>ToursRed no será responsable por el incumplimiento total o parcial de sus obligaciones cuando dicho incumplimiento sea consecuencia de causas de fuerza mayor, incluyendo de manera enunciativa más no limitativa: desastres naturales, pandemias, huelgas, conflictos laborales, fallas en servicios públicos, interrupciones de telecomunicaciones, actos gubernamentales o cualquier evento fuera de su control razonable.</p><h3>12. Límite de responsabilidad</h3><p>En cualquier caso, y aun cuando se determinara alguna responsabilidad de ToursRed, esta se limitará estrictamente al monto efectivamente pagado directamente a ToursRed por el Usuario por concepto de intermediación, excluyendo cualquier otro tipo de daño o indemnización.</p><h3>13. Conducta del Usuario</h3><p>El Usuario se compromete a utilizar el sitio conforme a la ley, la moral y la buena fe.</p><p>ToursRed podrá suspender o cancelar el acceso al sitio cuando detecte usos indebidos.</p><h3>14. Contenido generado por usuarios</h3><p>Las opiniones, comentarios o contenidos enviados por los Usuarios podrán ser utilizados por ToursRed con fines informativos o promocionales.</p><p>El Usuario concede a ToursRed una licencia gratuita, indefinida y sin limitación territorial para su uso.</p><h3>15. Propiedad intelectual</h3><p>Todo el contenido del sitio, incluyendo textos, imágenes, logotipos y diseño, es propiedad de ToursRed o de sus respectivos titulares.</p><p>Queda prohibida su reproducción sin autorización expresa.</p><h3>16. Protección de datos personales</h3><p>El tratamiento de datos personales se rige por el Aviso de Privacidad disponible en el sitio, conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p><h3>17. Cookies</h3><p>El sitio utiliza cookies conforme a su Política de Cookies.</p><h3>18. Modificaciones</h3><p>ToursRed podrá modificar estos Términos en cualquier momento. La versión vigente será la publicada en el sitio.</p><h3>19. Legislación aplicable y jurisdicción</h3><p>Estos Términos se rigen por las leyes mexicanas.</p><p>Cualquier controversia será sometida a los tribunales competentes del domicilio fiscal de ToursRed.</p><h3>20. Contacto</h3><p><a href='mailto:contacto@toursred.com'>contacto@toursred.com</a></p>"
+      },
+      "privacy": {
+        "title": "Aviso de Privacidad",
+        "content": "<h2>AVISO DE PRIVACIDAD INTEGRAL</h2><h3>TOURS RED GLOBAL S.A.S. DE C.V.</h3><p><strong>Última actualización:</strong> Febrero 2026</p><p>En cumplimiento con lo dispuesto por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y su Reglamento (en adelante, la \"Ley\"), TOURS RED GLOBAL S.A.S. DE C.V. (en adelante, \"ToursRed\"), con RFC TRG250711JWA, informa a los titulares de los datos personales lo siguiente:</p><h3>1. Identidad y domicilio del responsable</h3><p>ToursRed es responsable del tratamiento de sus datos personales.</p><ul><li><strong>Denominación social:</strong> TOURS RED GLOBAL S.A.S. DE C.V.</li><li><strong>RFC:</strong> TRG250711JWA</li><li><strong>Correo electrónico:</strong> <a href='mailto:contacto@toursred.com'>contacto@toursred.com</a></li><li><strong>Sitio web:</strong> <a href='https://www.toursred.com'>https://www.toursred.com</a></li></ul><h3>2. Datos personales recabados</h3><p>ToursRed podrá recabar las siguientes categorías de datos:</p><ul><li>Nombre completo</li><li>Correo electrónico</li><li>Teléfono</li><li>Información proporcionada en formularios de contacto o cotización</li><li>Datos relacionados con solicitudes de viaje</li><li>Datos fiscales (cuando sea necesario para facturación)</li><li>Información técnica básica (dirección IP, navegador, ubicación aproximada)</li></ul><p>ToursRed no recaba datos personales sensibles de forma sistemática. En caso de requerirse información de esta naturaleza para la correcta prestación de un servicio, se solicitará consentimiento expreso.</p><h3>3. Finalidades del tratamiento</h3><h4>Finalidades primarias:</h4><ul><li>Atender solicitudes de información, cotización o contacto</li><li>Gestionar relaciones con usuarios, agencias y proveedores</li><li>Canalizar solicitudes con terceros prestadores de servicios turísticos</li><li>Dar seguimiento a servicios solicitados</li><li>Cumplir obligaciones legales, fiscales y administrativas</li></ul><h4>Finalidades secundarias:</h4><ul><li>Envío de comunicaciones comerciales</li><li>Información sobre promociones, novedades y contenidos relacionados con ToursRed</li><li>Elaboración de perfiles comerciales básicos</li></ul><p>El Titular podrá oponerse al tratamiento para finalidades secundarias enviando un correo a <a href='mailto:contacto@toursred.com'>contacto@toursred.com</a>.</p><h3>4. Base legal del tratamiento</h3><p>El tratamiento de los datos personales se fundamenta en:</p><ul><li>El consentimiento del Titular</li><li>La ejecución de una relación contractual o precontractual</li><li>El cumplimiento de obligaciones legales</li><li>El interés legítimo de ToursRed para fines comerciales y de mejora de servicios</li></ul><h3>5. Transferencias de datos</h3><p>ToursRed podrá transferir datos personales únicamente cuando sea necesario para:</p><ul><li>Canalizar solicitudes con proveedores turísticos</li><li>Cumplir obligaciones legales</li></ul><p>Asimismo, ToursRed podrá utilizar proveedores tecnológicos (hosting, correo electrónico, analítica) que actúan como encargados del tratamiento.</p><p><strong>ToursRed no comercializa datos personales.</strong></p><h3>6. Conservación de los datos</h3><p>Los datos personales serán conservados durante el tiempo necesario para cumplir las finalidades descritas y posteriormente durante los plazos exigidos por la legislación aplicable, incluyendo disposiciones fiscales.</p><h3>7. Derechos ARCO y revocación del consentimiento</h3><p>El Titular podrá ejercer en cualquier momento sus derechos de Acceso, Rectificación, Cancelación u Oposición, así como revocar su consentimiento, enviando solicitud al correo:</p><p><strong>Email:</strong> <a href='mailto:contacto@toursred.com'>contacto@toursred.com</a></p><p>La solicitud deberá contener:</p><ul><li>Nombre del Titular</li><li>Medio para recibir respuesta</li><li>Identificación oficial</li><li>Descripción clara del derecho que desea ejercer</li></ul><p>ToursRed dará respuesta en un plazo máximo de veinte (20) días hábiles, conforme a la Ley.</p><h3>8. Opciones para limitar el uso o divulgación</h3><p>El Titular podrá solicitar dejar de recibir comunicaciones comerciales escribiendo a <a href='mailto:contacto@toursred.com'>contacto@toursred.com</a>.</p><h3>9. Uso de cookies y tecnologías similares</h3><p>ToursRed utiliza cookies conforme a su Política de Cookies publicada en el sitio web.</p><h3>10. Medidas de seguridad</h3><p>ToursRed implementa medidas administrativas, técnicas y físicas razonables para proteger los datos personales contra daño, pérdida, alteración, destrucción o acceso no autorizado.</p><p>No obstante, ningún sistema es completamente infalible.</p><h3>11. Menores de edad</h3><p>El sitio no está dirigido a menores de edad. ToursRed no recaba intencionalmente datos personales de menores.</p><h3>12. Cambios al aviso de privacidad</h3><p>ToursRed se reserva el derecho de modificar el presente Aviso de Privacidad en cualquier momento.</p><p>Las modificaciones estarán disponibles en el sitio web.</p><h3>13. Consentimiento</h3><p>Al proporcionar sus datos personales a través del sitio web, el Titular manifiesta haber leído y aceptado el presente Aviso de Privacidad.</p>"
+      },
+      "cookies": {
+        "title": "Política de Cookies",
+        "content": "<h2>POLÍTICA DE COOKIES</h2><h3>TOURS RED GLOBAL S.A.S. DE C.V.</h3><p><strong>Última actualización:</strong> Febrero 2026</p><h3>1. ¿Qué son las cookies?</h3><p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo (ordenador, tablet o móvil) cuando visita sitios web. Las cookies permiten al sitio web recordar sus acciones y preferencias (como idioma, tamaño de fuente y otras preferencias de visualización) durante un período de tiempo, para que no tenga que volver a configurarlas cada vez que regrese al sitio o navegue de una página a otra.</p><h3>2. ¿Qué tipos de cookies utilizamos?</h3><h4>2.1 Cookies Esenciales</h4><p>Estas cookies son estrictamente necesarias para el funcionamiento básico del sitio web. Incluyen cookies de sesión, preferencias de idioma y seguridad. Estas cookies no pueden ser desactivadas.</p><ul><li><strong>Cookie de consentimiento:</strong> Almacena su preferencia de consentimiento de cookies</li><li><strong>Cookie de idioma:</strong> Recuerda su preferencia de idioma (español/inglés)</li></ul><h4>2.2 Cookies Analíticas (Google Analytics)</h4><p>Utilizamos Google Analytics para analizar el uso del sitio web y mejorar nuestros servicios. Estas cookies recopilan información de forma anónima sobre cómo los visitantes utilizan nuestro sitio.</p><p><strong>Cookies de Google Analytics:</strong></p><ul><li><strong>_ga:</strong> Identificador único para distinguir usuarios. Duración: 2 años.</li><li><strong>_gid:</strong> Identificador único para distinguir usuarios. Duración: 24 horas.</li><li><strong>_gat:</strong> Utilizada para limitar el porcentaje de solicitudes. Duración: 1 minuto.</li></ul><p>Estas cookies nos ayudan a:</p><ul><li>Entender qué páginas son más visitadas</li><li>Conocer el tiempo de permanencia en el sitio</li><li>Identificar patrones de navegación</li><li>Mejorar la experiencia del usuario</li><li>Optimizar el rendimiento del sitio</li></ul><p><strong>Importante:</strong> Google Analytics NO recopila información personal identificable. Los datos se recopilan de forma agregada y anónima.</p><h3>3. ¿Cómo gestionamos su consentimiento?</h3><p>Al visitar nuestro sitio por primera vez, aparecerá un banner informativo solicitando su consentimiento para el uso de cookies analíticas.</p><p>Usted puede:</p><ul><li><strong>Aceptar cookies:</strong> Se activarán las cookies analíticas de Google Analytics.</li><li><strong>Rechazar cookies:</strong> Solo se utilizarán cookies esenciales para el funcionamiento del sitio.</li></ul><p>Su decisión quedará guardada durante 12 meses. Después de ese período, se le volverá a solicitar su consentimiento.</p><h3>4. Cookies de terceros</h3><p>Utilizamos Google Analytics, un servicio proporcionado por Google LLC. Google puede utilizar los datos recopilados para contextualizar y personalizar los anuncios de su propia red publicitaria.</p><p>Para más información sobre cómo Google utiliza los datos, consulte:</p><ul><li><a href='https://policies.google.com/privacy' target='_blank' rel='noopener noreferrer'>Política de Privacidad de Google</a></li><li><a href='https://policies.google.com/technologies/partner-sites' target='_blank' rel='noopener noreferrer'>Cómo utiliza Google los datos cuando usted utiliza sitios o aplicaciones de nuestros socios</a></li></ul><h3>5. ¿Cómo desactivar o eliminar cookies?</h3><h4>5.1 A través de nuestro sitio</h4><p>Puede revocar su consentimiento en cualquier momento haciendo clic en el enlace \"Preferencias de Cookies\" ubicado en el pie de página de nuestro sitio.</p><h4>5.2 A través de su navegador</h4><p>Puede configurar su navegador para rechazar todas las cookies o para que le avise cuando se envíe una cookie. Sin embargo, si desactiva las cookies, algunas partes del sitio pueden no funcionar correctamente.</p><p><strong>Instrucciones por navegador:</strong></p><ul><li><strong>Google Chrome:</strong> Configuración → Privacidad y seguridad → Cookies y otros datos de sitios</li><li><strong>Firefox:</strong> Opciones → Privacidad y seguridad → Cookies y datos del sitio</li><li><strong>Safari:</strong> Preferencias → Privacidad → Cookies y datos de sitios web</li><li><strong>Microsoft Edge:</strong> Configuración → Cookies y permisos de sitios → Cookies y datos de sitios</li></ul><h4>5.3 Desactivar Google Analytics</h4><p>Google ofrece un complemento de inhabilitación para navegadores:</p><p><a href='https://tools.google.com/dlpage/gaoptout' target='_blank' rel='noopener noreferrer'>https://tools.google.com/dlpage/gaoptout</a></p><h3>6. Actualización de esta política</h3><p>ToursRed se reserva el derecho de modificar esta Política de Cookies en cualquier momento. La versión actualizada se publicará en esta página con la fecha de última actualización.</p><p>Le recomendamos revisar esta política periódicamente para mantenerse informado sobre cómo utilizamos las cookies.</p><h3>7. Contacto</h3><p>Si tiene preguntas sobre nuestra Política de Cookies, puede contactarnos en:</p><ul><li><strong>Email:</strong> <a href='mailto:contacto@toursred.com'>contacto@toursred.com</a></li><li><strong>Sitio web:</strong> <a href='https://www.toursred.com'>https://www.toursred.com</a></li></ul><h3>8. Legislación aplicable</h3><p>Esta Política de Cookies se rige por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) y demás normativa aplicable en los Estados Unidos Mexicanos.</p>"
+      }
+    }
+  },
+  "megaTravel": {
+    "breadcrumbs": {
+      "home": "Inicio",
+      "tours": "Tours",
+      "internationalTours": "Tours Internacionales",
+      "megaTravel": "Mega Travel"
+    },
+    "hero": {
+      "title": "Tours Internacionales con Mega Travel",
+      "subtitle": "Explora más de 100 destinos alrededor del mundo con nuestro aliado de confianza"
+    },
+    "howItWorks": {
+      "title": "¿Cómo funciona?",
+      "description": "Explora nuestro catálogo de destinos internacionales, encuentra el viaje de tus sueños y solicita una cotización personalizada. Nuestro equipo se pondrá en contacto contigo en menos de 24 horas con toda la información y precios actualizados para hacer tu reservación."
+    },
+    "warning": {
+      "message": "Este es un catálogo informativo. Para reservar, primero debes solicitar una cotización y nuestro equipo te guiará en el proceso de compra."
+    },
+    "tabs": {
+      "bestOffers": "Mejores Ofertas",
+      "currentPromotions": "Promociones Vigentes",
+      "europe": "Europa",
+      "middleEast": "Medio Oriente",
+      "canada": "Canadá",
+      "asia": "Asia",
+      "africa": "África",
+      "pacific": "Pacífico",
+      "southAmerica": "Sudamérica",
+      "unitedStates": "Estados Unidos",
+      "centralAmerica": "Centroamérica",
+      "caribbean": "Cuba y el Caribe",
+      "specialEvents": "Eventos Especiales",
+      "cruises": "Cruceros"
+    },
+    "loading": "Cargando catálogo...",
+    "error": {
+      "title": "No se pudo cargar el catálogo",
+      "button": "Ver en Mega Travel"
+    },
+    "floatingButton": "Solicitar Cotización",
+    "form": {
+      "title": "Solicitar Cotización",
+      "fullName": "Nombre Completo",
+      "email": "Email",
+      "phone": "Teléfono",
+      "phonePlaceholder": "10 dígitos",
+      "destination": "Destino de Interés",
+      "destinationPlaceholder": "Selecciona un destino",
+      "tourCode": "Código de Viaje",
+      "tourCodePlaceholder": "20293",
+      "tourCodeHelper": "Si ya conoces el código del tour, ingrésalo aquí",
+      "travelDate": "Fecha Aproximada de Viaje",
+      "travelDatePlaceholder": "dd/mm/aaaa",
+      "numberOfPeople": "Número de Personas",
+      "additionalComments": "Mensaje o Comentarios Adicionales",
+      "additionalCommentsPlaceholder": "Cuéntanos más sobre tu viaje ideal...",
+      "cancel": "Cancelar",
+      "submit": "Enviar Cotización",
+      "submitting": "Enviando...",
+      "destinations": {
+        "bestOffers": "Mejores Ofertas",
+        "currentPromotions": "Promociones Vigentes",
+        "europe": "Europa",
+        "middleEast": "Medio Oriente",
+        "canada": "Canadá",
+        "asia": "Asia",
+        "africa": "África",
+        "pacific": "Pacífico",
+        "southAmerica": "Sudamérica",
+        "unitedStates": "Estados Unidos",
+        "centralAmerica": "Centroamérica",
+        "nationalTours": "Tours Nacionales"
+      }
+    },
+    "success": {
+      "title": "¡Cotización Solicitada!",
+      "description": "Tu solicitud ha sido enviada exitosamente. Nuestro equipo se pondrá en contacto contigo en menos de 24 horas."
+    },
+    "error": {
+      "title": "Error",
+      "description": "Hubo un error al enviar tu solicitud. Por favor, intenta más tarde."
+    }
+  },
+  "nefertariTravel": {
+    "breadcrumbs": {
+      "home": "Inicio",
+      "tours": "Tours",
+      "internationalTours": "Tours Internacionales",
+      "nefertariTravel": "Nefertari Travel"
+    },
+    "hero": {
+      "title": "Tours Internacionales con Nefertari Travel",
+      "subtitle": "Explora diferentes destinos alrededor del mundo con nuestro aliado de confianza"
+    },
+    "howItWorks": {
+      "title": "¿Cómo funciona?",
+      "description": "Explora nuestro catálogo de destinos internacionales, encuentra el viaje de tus sueños y solicita una cotización personalizada. Nuestro equipo se pondrá en contacto contigo en menos de 24 horas con toda la información y precios actualizados para hacer tu reservación."
+    },
+    "warning": {
+      "message": "Este es un catálogo informativo. Para reservar, primero debes solicitar una cotización y nuestro equipo te guiará en el proceso de compra."
+    },
+    "loading": "Cargando catálogo...",
+    "error": {
+      "title": "No se pudo cargar el catálogo",
+      "button": "Ver en Nefertari Travel"
+    },
+    "floatingButton": "Solicitar Cotización",
+    "reloadCatalog": "Volver al Catálogo",
+    "internationalDepartures": "Tours Internacionales",
+    "nationalDepartures": "Salidas Nacionales",
+    "form": {
+      "title": "Solicitar Cotización",
+      "fullName": "Nombre Completo",
+      "email": "Email",
+      "phone": "Teléfono",
+      "phonePlaceholder": "10 dígitos",
+      "travelDate": "Fecha Aproximada de Viaje",
+      "travelDatePlaceholder": "dd/mm/aaaa",
+      "tripName": "Nombre del Viaje",
+      "tripNamePlaceholder": "Ej: Europeando 2026",
+      "numberOfPeople": "Número de Personas",
+      "additionalComments": "Mensaje o Comentarios Adicionales",
+      "additionalCommentsPlaceholder": "Cuéntanos más sobre tu viaje ideal...",
+      "cancel": "Cancelar",
+      "submit": "Enviar Cotización",
+      "submitting": "Enviando..."
+    },
+    "success": {
+      "title": "¡Cotización Solicitada!",
+      "description": "Tu solicitud ha sido enviada exitosamente. Nuestro equipo se pondrá en contacto contigo en menos de 24 horas."
+    },
+    "error": {
+      "title": "Error",
+      "description": "Hubo un error al enviar tu solicitud. Por favor, intenta más tarde."
+    }
+  },
+  "exoticca": {
+    "breadcrumbs": {
+      "home": "Inicio",
+      "tours": "Tours",
+      "internationalTours": "Tours Internacionales",
+      "exoticca": "Exoticca"
+    },
+    "hero": {
+      "title": "Tours Internacionales con Exoticca",
+      "subtitle": "Descubre destinos exóticos alrededor del mundo con paquetes completos y experiencias únicas"
+    },
+    "howItWorks": {
+      "title": "¿Qué es Exoticca?",
+      "description": "Exoticca es un líder global en viajes a destinos exóticos, ofreciendo paquetes todo incluido a más de 60 países. Con años de experiencia, se especializan en crear experiencias memorables combinando vuelos, hoteles de calidad, tours guiados y actividades exclusivas a precios competitivos."
+    },
+    "exploreNotice": "Al hacer clic en \"Explorar Tours\", se abrirá una nueva ventana con el catálogo completo de Exoticca donde podrás ver todos los destinos disponibles, precios y hacer tu reservación directamente.",
+    "exploreCatalogButton": "Explorar Tours en Exoticca",
+    "whyChooseTitle": "¿Por qué elegir Exoticca?",
+    "whyChooseSubtitle": "Exoticca se dedica a hacer realidad los viajes de tus sueños con servicios premium y atención al detalle",
+    "features": {
+      "uniqueDestinations": {
+        "title": "Destinos Únicos",
+        "description": "Accede a experiencias exclusivas en más de 60 países alrededor del mundo con itinerarios cuidadosamente diseñados."
+      },
+      "competitivePrices": {
+        "title": "Precios Competitivos",
+        "description": "Obtén las mejores tarifas con paquetes todo incluido que combinan vuelos, hoteles, tours y más."
+      },
+      "safeTravel": {
+        "title": "Viajes Seguros",
+        "description": "Disfruta de la tranquilidad con protección completa y asistencia 24/7 durante todo tu viaje."
+      },
+      "premiumExperiences": {
+        "title": "Experiencias Premium",
+        "description": "Vive aventuras extraordinarias con guías expertos y servicios de alta calidad en cada destino."
+      },
+      "flexibility": {
+        "title": "Flexibilidad",
+        "description": "Elige entre múltiples fechas de salida y opciones de personalización para adaptar tu viaje."
+      },
+      "dedicatedSupport": {
+        "title": "Soporte Dedicado",
+        "description": "Recibe atención personalizada desde la planificación hasta el regreso de tu viaje."
+      }
+    },
+    "popularDestinationsTitle": "Destinos Populares",
+    "popularDestinationsSubtitle": "Explora algunos de los destinos más fascinantes que Exoticca tiene para ofrecerte:",
+    "destinations": {
+      "list": [
+        "Asia: Tailandia, Vietnam, Japón, India, Sri Lanka",
+        "África: Marruecos, Egipto, Sudáfrica, Tanzania, Kenia",
+        "Europa: Grecia, Italia, España, Portugal, Turquía",
+        "América del Sur: Perú, Brasil, Argentina, Chile, Ecuador",
+        "Oceanía: Australia, Nueva Zelanda, Polinesia Francesa",
+        "Oriente Medio: Jordania, Emiratos Árabes, Israel"
+      ]
+    },
+    "allInclusiveTitle": "Paquetes Todo Incluido",
+    "allInclusiveDescription": "Todos los paquetes de Exoticca incluyen vuelos internacionales, hoteles seleccionados, traslados, tours guiados en español, algunas comidas y asistencia durante todo el viaje. Solo necesitas preparar tu maleta y disfrutar de la experiencia.",
+    "legalNoticeTitle": "Aviso Legal",
+    "legalNotice1": "Los paquetes y servicios turísticos internacionales ofrecidos en esta sección son prestados, operados y administrados directamente por",
+    "legalNotice1End": ", quien actúa como proveedor final del servicio.",
+    "legalNotice2": "Exoticca es el único responsable de la ejecución del viaje, calidad de los servicios, atención al cliente, políticas de cancelación, modificaciones, reembolsos y cualquier reclamación relacionada con la experiencia de viaje.",
+    "legalNotice3": "ToursRed no opera, organiza ni administra los viajes, y participa exclusivamente como intermediario de referencia, limitando su responsabilidad a la promoción y canalización del usuario hacia el proveedor externo.",
+    "readyTitle": "¿Listo para tu próxima aventura?",
+    "readySubtitle": "Explora el catálogo completo de Exoticca, encuentra tu destino ideal y reserva con confianza. Si tienes dudas, nuestro equipo está listo para ayudarte.",
+    "viewFullCatalog": "Ver Catálogo Completo",
+    "requestQuoteButton": "Solicitar Cotización",
+    "floatingButton": "Solicitar Cotización",
+    "form": {
+      "title": "Solicitar Cotización",
+      "fullName": "Nombre Completo",
+      "email": "Email",
+      "phone": "Teléfono",
+      "phonePlaceholder": "10 dígitos",
+      "travelDate": "Fecha Aproximada de Viaje",
+      "travelDatePlaceholder": "dd/mm/aaaa",
+      "tripName": "Nombre del Viaje",
+      "tripNamePlaceholder": "Ej: Tour por Egipto 2026",
+      "numberOfPeople": "Número de Personas",
+      "additionalComments": "Mensaje o Comentarios Adicionales",
+      "additionalCommentsPlaceholder": "Cuéntanos más sobre tu viaje ideal...",
+      "cancel": "Cancelar",
+      "submit": "Enviar Cotización",
+      "submitting": "Enviando..."
+    },
+    "success": {
+      "title": "¡Cotización Solicitada!",
+      "description": "Tu solicitud ha sido enviada exitosamente. Nuestro equipo se pondrá en contacto contigo en menos de 24 horas."
+    },
+    "error": {
+      "title": "Error",
+      "description": "Hubo un error al enviar tu solicitud. Por favor, intenta más tarde."
+    }
+  },
+  "services": {
+    "travelInsurance": {
+      "hero": {
+        "title": "Asegura tu Viaje",
+        "subtitle": "Viaja tranquilo. Nosotros te ayudamos a elegir tu seguro ideal."
+      },
+      "intro": {
+        "title": "¿Por qué necesitas un seguro de viaje?",
+        "description": "En ToursRed colaboramos con proveedores especializados en asistencia y seguros de viaje para ayudarte a encontrar la protección que mejor se adapte a tu destino, duración y tipo de experiencia.",
+        "partners": "Trabajamos con aliados como Assist Card, Universal Assistance, Auras Insure, Protege Tu Viaje, Asegura Tu Viaje y Go Assistance.",
+        "goal": "Nuestro objetivo es simple: ayudarte a viajar protegido, sin complicaciones."
+      },
+      "benefits": {
+        "title": "¿Por qué necesitas un seguro de viaje?",
+        "benefit1": {
+          "title": "Atención médica",
+          "description": "Emergencias, hospitalización y asistencia médica."
+        },
+        "benefit2": {
+          "title": "Cancelaciones o interrupciones",
+          "description": "Apoyo económico si tu viaje cambia por causas justificadas."
+        },
+        "benefit3": {
+          "title": "Equipaje protegido",
+          "description": "Cobertura ante pérdida, robo o daño."
+        },
+        "benefit4": {
+          "title": "Asistencia 24/7",
+          "description": "Acompañamiento telefónico en cualquier momento de tu viaje."
+        }
+      },
+      "process": {
+        "title": "¿Cómo funciona con ToursRed?",
+        "step1": {
+          "number": "1",
+          "title": "Solicita tu cotización",
+          "description": "Cuéntanos tu destino, fechas y número de viajeros."
+        },
+        "step2": {
+          "number": "2",
+          "title": "Comparamos opciones por ti",
+          "description": "Te presentamos alternativas de nuestros aliados según tu perfil."
+        },
+        "step3": {
+          "number": "3",
+          "title": "Tú eliges",
+          "description": "Seleccionas el plan que mejor se adapte a tus necesidades."
+        },
+        "step4": {
+          "number": "4",
+          "title": "Viaja protegido",
+          "description": "Te entregamos tu póliza antes de iniciar tu experiencia."
+        }
+      },
+      "partners": {
+        "title": "Nuestros Aliados",
+        "subtitle": "Proveedores de confianza en seguros de viaje",
+        "legal": "ToursRed actúa como intermediario en el proceso de cotización. La cobertura, condiciones y atención son responsabilidad directa del proveedor seleccionado."
+      },
+      "cta": {
+        "title": "¿Listo para viajar protegido?",
+        "description": "Contáctanos y te ayudaremos a encontrar el seguro perfecto para tu próximo viaje",
+        "primaryButton": "Solicitar cotización",
+        "secondaryButton": "Hablar con un asesor"
+      },
+      "form": {
+        "title": "Solicitar Cotización de Seguro de Viaje",
+        "tripData": {
+          "label": "Datos del viaje",
+          "destination": "Destino del viaje",
+          "startDate": "Fecha de salida",
+          "endDate": "Fecha de regreso",
+          "numberOfTravelers": "Número de viajeros",
+          "tripType": "Tipo de viaje",
+          "tripTypeOptions": {
+            "national": "Nacional",
+            "international": "Internacional"
+          },
+          "tripReason": "Motivo del viaje (opcional)",
+          "tripReasonOptions": {
+            "vacation": "Vacaciones",
+            "adventure": "Aventura / tours",
+            "business": "Negocios",
+            "other": "Otro"
+          }
+        },
+        "travelerProfile": {
+          "label": "Perfil del viajero",
+          "age": "Edad del viajero principal",
+          "medicalCondition": "¿Alguna condición médica relevante?",
+          "medicalConditionDetails": "Por favor describe la condición médica"
+        },
+        "coverage": {
+          "label": "Cobertura deseada (opcional)",
+          "medical": "Médica",
+          "cancellation": "Cancelación",
+          "luggage": "Equipaje",
+          "adventure": "Aventura / deportes",
+          "noSure": "No estoy seguro (recomendación del asesor)"
+        },
+        "contactInfo": {
+          "label": "Datos de contacto",
+          "fullName": "Nombre completo",
+          "email": "Correo electrónico",
+          "phone": "WhatsApp / Teléfono",
+          "preferredContact": "Preferencia de contacto",
+          "preferredContactOptions": {
+            "whatsapp": "WhatsApp",
+            "call": "Llamada",
+            "email": "Correo"
+          }
+        },
+        "consent": {
+          "label": "Consentimiento",
+          "agreement": "Acepto ser contactado por ToursRed para recibir mi cotización",
+          "privacy": "Acepto aviso de privacidad"
+        },
+        "submit": "Solicitar cotización",
+        "submitting": "Enviando...",
+        "successMessage": "Te contactaremos en breve con opciones personalizadas.",
+        "success": {
+          "title": "¡Cotización Solicitada!",
+          "description": "Hemos recibido tu solicitud. Nuestro equipo se pondrá en contacto contigo en breve con opciones personalizadas."
+        },
+        "error": {
+          "title": "Error",
+          "description": "Hubo un error al enviar tu solicitud. Por favor, intenta más tarde."
+        }
+      }
+    },
+    "travelerServices": {
+      "hero": {
+        "title": "Servicios Para Viajeros",
+        "subtitle": "Todo lo que necesitas para tu viaje perfecto"
+      },
+      "customItineraries": {
+        "title": "Armado de Itinerarios a la Medida",
+        "description": "Diseñamos itinerarios personalizados adaptados a tus intereses, presupuesto y tiempo. Nuestros expertos en viajes crean rutas únicas que maximizan tu experiencia.",
+        "features": [
+          "Consultoría personalizada",
+          "Recomendaciones de expertos locales",
+          "Optimización de tiempos y costos",
+          "Reservas coordinadas"
+        ]
+      },
+      "customPackages": {
+        "title": "Paquetes de Viajes a la Medida",
+        "description": "Creamos paquetes completos que incluyen transporte, alojamiento, tours y experiencias. Todo organizado para que solo te preocupes por disfrutar.",
+        "features": [
+          "Hoteles seleccionados",
+          "Traslados incluidos",
+          "Tours y actividades",
+          "Soporte durante el viaje"
+        ]
+      },
+      "transportQuotes": {
+        "title": "Cotización de Transporte",
+        "description": "Encuentra las mejores opciones de transporte para tu viaje. Comparamos precios y te ayudamos a reservar vuelos, autobuses, trenes y más.",
+        "features": [
+          "Comparación de precios",
+          "Múltiples opciones de transporte",
+          "Reservas confirmadas",
+          "Mejores tarifas disponibles"
+        ]
+      },
+      "cta": {
+        "title": "¿Necesitas ayuda con tu viaje?",
+        "description": "Nuestro equipo de expertos está listo para ayudarte a planificar cada detalle",
+        "button": "Contactar Ahora"
+      }
+    },
+    "agencyServices": {
+      "hero": {
+        "title": "Servicios Para Agencias",
+        "subtitle": "Soluciones profesionales para hacer crecer tu negocio"
+      },
+      "logoDesign": {
+        "title": "Diseño de Logotipo",
+        "description": "Creamos la identidad visual perfecta para tu agencia de viajes. Un logotipo profesional que refleja tus valores y atrae a tus clientes ideales.",
+        "features": [
+          "Diseño original y único",
+          "Múltiples propuestas",
+          "Archivos en todos los formatos",
+          "Revisiones incluidas"
+        ]
+      },
+      "webDevelopment": {
+        "title": "Desarrollo de Página Web",
+        "description": "Diseñamos y desarrollamos sitios web modernos, responsive y optimizados para convertir visitantes en clientes. Incluye integración con sistemas de reservas.",
+        "features": [
+          "Diseño responsive",
+          "Sistema de reservas integrado",
+          "Optimización SEO",
+          "Hosting y dominio"
+        ]
+      },
+      "rntConsulting": {
+        "title": "Consultoría para obtener el RNT",
+        "description": "Te guiamos en todo el proceso de obtención del Registro Nacional de Turismo. Asesoría completa para cumplir con todos los requisitos legales.",
+        "features": [
+          "Revisión de requisitos",
+          "Preparación de documentos",
+          "Seguimiento del trámite",
+          "Asesoría legal especializada"
+        ]
+      },
+      "sasConsulting": {
+        "title": "Consultoría para dar de alta la agencia como SAS",
+        "description": "Asesoría completa para constituir tu agencia como Sociedad por Acciones Simplificada. Proceso rápido, económico y sin complicaciones.",
+        "features": [
+          "Constitución en 48 horas",
+          "Sin notario requerido",
+          "Costos reducidos",
+          "Asesoría fiscal incluida"
+        ]
+      },
+      "cta": {
+        "title": "¿Listo para profesionalizar tu agencia?",
+        "description": "Te ayudamos a llevar tu negocio al siguiente nivel con nuestros servicios profesionales",
+        "button": "Solicitar Información"
+      }
+    }
+  },
+  "careers": {
+    "hero": {
+      "title": "Trabaja con Nosotros",
+      "subtitle": "Únete a nuestro equipo y construye el futuro del turismo digital"
+    },
+    "intro": {
+      "paragraph1": "En ToursRed estamos construyendo una nueva forma de conectar viajeros con experiencias auténticas.",
+      "paragraph2": "Si quieres colaborar con un proyecto en crecimiento dentro del sector turismo y tecnología, nos encantará conocerte."
+    },
+    "currentOpenings": {
+      "title": "Actualmente buscamos colaboradores por honorarios en las siguientes áreas:"
+    },
+    "positions": {
+      "accountant": {
+        "title": "Contador(a)",
+        "badge": "Modalidad freelance / honorarios",
+        "responsibilities": {
+          "title": "Responsabilidades:",
+          "items": [
+            "Contabilidad electrónica de la empresa",
+            "Presentación de declaraciones ante SAT",
+            "Generación de Balance General y de Resultados",
+            "Asesoría fiscal básica",
+            "Apoyo en cumplimiento administrativo"
+          ]
+        },
+        "requirements": {
+          "title": "Requisitos:",
+          "items": [
+            "Experiencia con personas morales (preferente SAS de CV) - No Excluyente",
+            "Conocimiento de plataformas digitales",
+            "Enfoque práctico y orientación a Startups"
+          ]
+        }
+      },
+      "communityManager": {
+        "title": "Community Manager",
+        "badge": "Modalidad freelance / honorarios",
+        "responsibilities": {
+          "title": "Responsabilidades:",
+          "items": [
+            "Gestión de redes sociales (Facebook, Instagram, TikTok)",
+            "Creación de contenido básico (posts, reels, historias)",
+            "Calendario editorial",
+            "Apoyo en campañas de lanzamiento",
+            "Respuesta a mensajes y comentarios"
+          ]
+        },
+        "requirements": {
+          "title": "Requisitos:",
+          "items": [
+            "Experiencia manejando marcas digitales",
+            "Creatividad y buena redacción",
+            "Deseable experiencia en turismo o servicios"
+          ]
+        }
+      }
+    },
+    "application": {
+      "title": "¿Te interesa colaborar?",
+      "description": "Envíanos tu CV, portafolio (si aplica) y propuesta económica a:",
+      "email": "contacto@toursred.com",
+      "subject": {
+        "title": "Asunto del correo:",
+        "accountant": "Vacante – Contador",
+        "communityManager": "Vacante – Community Manager"
+      },
+      "response": "Nos pondremos en contacto contigo si tu perfil coincide con lo que estamos buscando."
+    },
+    "legalNotice": {
+      "text": "ToursRed colabora principalmente con profesionales independientes bajo esquema de honorarios. Actualmente no se ofrecen prestaciones ni se establece relación laboral directa. Somos un proyecto en etapa de crecimiento enfocado en construir alianzas profesionales de largo plazo."
+    }
+  },
+  "carRental": {
+    "meta": {
+      "title": "Renta un Auto | ToursRed",
+      "description": "Busca, compara y reserva autos de renta en México y el mundo con las mejores tarifas garantizadas."
+    },
+    "breadcrumbs": {
+      "services": "Servicios",
+      "carRental": "Renta un Auto"
+    },
+    "hero": {
+      "title": "Renta un Auto",
+      "subtitle": "Busca, compara y reserva autos de renta en México y más de 100 países con las mejores tarifas del mercado. Gracias a nuestras alianzas con BookingCars y Agent Cars, ahora puedes planificar tu movilidad desde el mismo lugar donde organizas tu viaje.",
+      "badge": "Alianza Oficial"
+    },
+    "howItWorks": {
+      "title": "¿Cómo funciona?",
+      "description": "A través de nuestras alianzas con BookingCars y Agent Cars, puedes buscar disponibilidad de autos en tiempo real, comparar precios entre múltiples proveedores y completar tu reservación de forma segura. Todo dentro del ecosistema ToursRed.",
+      "step1": {
+        "title": "Selecciona tu destino",
+        "description": "Elige la ciudad o aeropuerto donde necesitas el auto, las fechas de recogida y devolución."
+      },
+      "step2": {
+        "title": "Compara opciones",
+        "description": "Visualiza todas las opciones disponibles con precios, tipo de vehículo, políticas de combustible y más."
+      },
+      "step3": {
+        "title": "Reserva con seguridad",
+        "description": "Completa tu reservación de forma segura con pago en línea y recibe la confirmación al instante."
+      },
+      "step4": {
+        "title": "Recoge tu auto",
+        "description": "Presenta tu confirmación en el mostrador de la arrendadora y empieza a disfrutar tu viaje."
+      }
+    },
+    "benefits": {
+      "title": "Ventajas de rentar a través de ToursRed",
+      "subtitle": "Al reservar tu auto con nosotros, accedes a beneficios exclusivos que no encontrarás en otro lugar.",
+      "benefit1": {
+        "title": "Mejor precio garantizado",
+        "description": "Comparamos tarifas de las principales arrendadoras en tiempo real para que siempre obtengas el mejor precio."
+      },
+      "benefit2": {
+        "title": "Amplia cobertura global",
+        "description": "Disponibilidad en miles de puntos de recogida en más de 100 países alrededor del mundo."
+      },
+      "benefit3": {
+        "title": "Reservación flexible",
+        "description": "La mayoría de las reservaciones incluyen cancelación gratuita, para que planifiques con tranquilidad."
+      },
+      "benefit4": {
+        "title": "Soporte en español",
+        "description": "Nuestro equipo está disponible para ayudarte en cualquier etapa de tu reservación o durante tu viaje."
+      }
+    },
+    "booking": {
+      "title": "Busca y reserva tu auto ahora",
+      "subtitle": "Elige tu proveedor preferido y encuentra el auto ideal para tu viaje. Ingresa tu destino, selecciona las fechas y reserva de forma segura.",
+      "tipBookingCars": "Consejo: con BookingCars puedes comparar tarifas de múltiples arrendadoras en más de 100 países. Reservar con anticipación garantiza mayor disponibilidad y mejores precios.",
+      "tipAgentCars": "Consejo: Agent Cars es la plataforma especializada en renta de autos para agencias de viaje. Completa el formulario y un agente te contactará con las mejores opciones."
+    },
+    "legalNotice": {
+      "title": "Aviso Legal",
+      "line1": "El servicio de renta de autos ofrecido en esta sección es operado y administrado directamente por",
+      "provider": "BookingCars y Agent Cars",
+      "line1End": ", quienes actúan como proveedores finales del servicio según el buscador seleccionado.",
+      "line2": "Cada proveedor es el único responsable de la disponibilidad de vehículos, condiciones de renta, políticas de cancelación, modificaciones, reembolsos y cualquier reclamación relacionada con el servicio.",
+      "line3": "ToursRed participa exclusivamente como intermediario de referencia a través de alianzas comerciales, limitando su responsabilidad a la promoción y canalización del usuario hacia el proveedor externo."
+    },
+    "cta": {
+      "title": "¿Necesitas ayuda para planificar tu viaje completo?",
+      "subtitle": "Combina tu renta de auto con tours, experiencias y seguros de viaje. Nuestro equipo puede ayudarte a armar el itinerario perfecto.",
+      "primaryButton": "Hablar con un Asesor",
+      "secondaryButton": "Ver otros servicios"
+    },
+    "floatingButton": "Contactar Asesor",
+    "quoteForm": {
+      "title": "Solicitar Asesoría de Renta de Auto",
+      "subtitle": "Cuéntanos sobre tu viaje y un asesor te contactará para ayudarte a encontrar el auto ideal.",
+      "fullName": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "phonePlaceholder": "10 dígitos",
+      "pickupLocation": "Ciudad o aeropuerto de recogida",
+      "pickupLocationPlaceholder": "Ej: CDMX, Cancún, aeropuerto...",
+      "pickupDate": "Fecha de recogida",
+      "pickupDatePlaceholder": "Selecciona una fecha",
+      "returnDate": "Fecha de devolución",
+      "returnDatePlaceholder": "Selecciona una fecha",
+      "numberOfPeople": "Número de personas",
+      "carPreference": "Tipo de vehículo preferido",
+      "carPreferencePlaceholder": "Selecciona una opción",
+      "carTypes": {
+        "economy": "Económico",
+        "compact": "Compacto",
+        "sedan": "Sedán",
+        "suv": "SUV",
+        "van": "Minivan / Van",
+        "luxury": "Lujo",
+        "any": "Sin preferencia"
+      },
+      "additionalComments": "Comentarios adicionales",
+      "additionalCommentsPlaceholder": "¿Necesitas silla para bebé, GPS, conductor adicional? Cuéntanos...",
+      "submit": "Enviar solicitud",
+      "submitting": "Enviando...",
+      "cancel": "Cancelar"
+    },
+    "formConsent": {
+      "title": "Consentimiento",
+      "acceptContact": "Acepto ser contactado por ToursRed para recibir asesoría sobre mi solicitud de renta de auto.",
+      "acceptPrivacy": "Acepto el ",
+      "privacyLink": "aviso de privacidad"
+    },
+    "error": {
+      "title": "Error",
+      "description": "Ocurrió un error al enviar tu solicitud. Por favor, intenta de nuevo."
+    }
+  },
+  "esim": {
+    "meta": {
+      "title": "ESIM de Viaje | ToursRed",
+      "description": "Mantente conectado en todo el mundo con una eSIM de viaje. Obtén descuentos exclusivos con nuestros socios Saily y Datos de Viaje."
+    },
+    "hero": {
+      "title": "ESIM de Viaje",
+      "subtitle": "Conéctate al llegar a tu destino sin cambiar de chip. Planes de datos internacionales con descuentos exclusivos para viajeros ToursRed."
+    },
+    "intro": {
+      "title": "¿Qué es una eSIM?",
+      "description": "Una eSIM (SIM embebida) es una tarjeta SIM digital que se activa directamente en tu smartphone sin necesidad de cambiar el chip físico. Compra tu plan de datos antes de salir de viaje y actívalo en segundos al llegar a tu destino.",
+      "benefit1": {
+        "title": "Sin cambio de chip",
+        "description": "Activa tu plan de datos en segundos directamente desde tu teléfono."
+      },
+      "benefit2": {
+        "title": "Cobertura global",
+        "description": "Planes disponibles para más de 200 países y destinos alrededor del mundo."
+      },
+      "benefit3": {
+        "title": "Descuentos exclusivos",
+        "description": "Como viajero ToursRed, accedes a códigos de descuento especiales con nuestros socios."
+      },
+      "benefit4": {
+        "title": "Actívala al instante",
+        "description": "Compra en línea, recibe por email y activa cuando llegues. Sin filas ni esperas."
+      }
+    },
+    "partners": {
+      "title": "Nuestros Socios de eSIM",
+      "subtitle": "Haz clic en cada tarjeta para revelar tu código de descuento exclusivo",
+      "discountCode": "Código de Descuento",
+      "visitPartner": "Ir a",
+      "legal": "Al hacer clic en el botón de cada socio serás redirigido a su sitio web externo. ToursRed actúa como intermediario de referencia. Las condiciones, precios y disponibilidad de los planes son responsabilidad de cada proveedor."
+    },
+    "howTo": {
+      "title": "¿Cómo usar tu eSIM?",
+      "step1": {
+        "title": "Elige tu plan",
+        "description": "Selecciona el socio, destino y plan de datos que mejor se adapte a tu viaje."
+      },
+      "step2": {
+        "title": "Aplica tu descuento",
+        "description": "Usa el código exclusivo ToursRed al momento de comprar para obtener tu descuento."
+      },
+      "step3": {
+        "title": "Recibe por email",
+        "description": "Recibirás las instrucciones de activación y el QR de tu eSIM en tu correo electrónico."
+      },
+      "step4": {
+        "title": "Actívala al llegar",
+        "description": "Escanea el QR desde los ajustes de tu teléfono y listo, estarás conectado."
+      }
+    },
+    "compatible": {
+      "title": "¿Es compatible con mi teléfono?",
+      "description": "La mayoría de los smartphones modernos son compatibles con eSIM. Antes de comprar, verifica que tu dispositivo soporte eSIM y que esté desbloqueado. Los principales modelos compatibles incluyen iPhone XS o posterior, Samsung Galaxy S20 o posterior, Google Pixel 3 o posterior, y muchos más."
+    }
+  },
+  "footer": {
+    "tagline": "Experiencias auténticas creadas por agencias locales, para viajeros que buscan algo más que un tour.",
+    "company": "TOURS RED GLOBAL SAS DE CV",
+    "rfc": "RFC: TRG250711JWA",
+    "mexican": "Empresa 100% mexicana",
+    "rights": "Todos los derechos reservados",
+    "social": "Síguenos",
+    "companyMenu": {
+      "title": "Compañía",
+      "aboutUs": "Quiénes Somos",
+      "howItWorks": "Cómo Funciona",
+      "sustainability": "Sostenibilidad",
+      "contact": "Contacto"
+    },
+    "resources": {
+      "title": "Recursos",
+      "blog": "Blog",
+      "press": "Prensa",
+      "careers": "Trabaja con Nosotros"
+    },
+    "legal": {
+      "title": "Aviso Legal",
+      "terms": "Términos",
+      "privacy": "Privacidad",
+      "cookies": "Cookies"
+    }
+  },
+  "cookieBanner": {
+    "message": "Utilizamos cookies para mejorar tu experiencia de navegación y analizar el tráfico del sitio. Al continuar navegando, aceptas el uso de cookies.",
+    "accept": "Aceptar Cookies",
+    "reject": "Rechazar",
+    "learnMore": "Más información"
+  }
+}
