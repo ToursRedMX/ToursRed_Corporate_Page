@@ -3,6 +3,7 @@ import { sendGenericEmail } from '@/lib/smtp2go';
 import { verifyAntiSpam } from '@/lib/antispam';
 import { sendTikTokServerEvent } from '@/lib/tiktokServerEvents';
 import { getSupabaseServerClient } from '@/lib/supabaseServer';
+import { escapeHtml } from '@/lib/escapeHtml';
 
 const LOGO_URL = 'https://www.toursred.com.mx/logo.png';
 
@@ -184,23 +185,23 @@ export async function POST(request: Request) {
       <h3>${isSpanish ? 'Datos de la Agencia' : 'Agency Information'}</h3>
       <div class="info-row">
         <span class="label">${isSpanish ? 'Nombre de la Agencia:' : 'Agency Name:'}</span>
-        <span class="value">${agencyName}</span>
+        <span class="value">${escapeHtml(agencyName)}</span>
       </div>
       <div class="info-row">
         <span class="label">${isSpanish ? 'Nombre del Responsable:' : 'Responsible Person:'}</span>
-        <span class="value">${responsibleName}</span>
+        <span class="value">${escapeHtml(responsibleName)}</span>
       </div>
       <div class="info-row">
         <span class="label">${isSpanish ? 'Correo:' : 'Email:'}</span>
-        <span class="value"><a href="mailto:${email}" style="color: #dc2626;">${email}</a></span>
+        <span class="value"><a href="mailto:${escapeHtml(email)}" style="color: #dc2626;">${escapeHtml(email)}</a></span>
       </div>
       <div class="info-row">
         <span class="label">${isSpanish ? 'Teléfono:' : 'Phone:'}</span>
-        <span class="value">${phone}</span>
+        <span class="value">${escapeHtml(phone)}</span>
       </div>
       <div class="info-row">
         <span class="label">${isSpanish ? 'Dirección:' : 'Address:'}</span>
-        <span class="value">${address}</span>
+        <span class="value">${escapeHtml(address)}</span>
       </div>
     </div>
 
@@ -208,29 +209,29 @@ export async function POST(request: Request) {
       <h3>${isSpanish ? 'Estado de la Agencia' : 'Agency Status'}</h3>
       <div class="info-row">
         <span class="label">${isSpanish ? 'Estado:' : 'Status:'}</span>
-        <span class="value">${agencyStateLabel}</span>
+        <span class="value">${escapeHtml(agencyStateLabel)}</span>
       </div>
       ${agencyState === 'formal' ? `
       <div class="info-row">
         <span class="label">${isSpanish ? 'RNT:' : 'RNT:'}</span>
-        <span class="value">${rntStatusLabel}</span>
+        <span class="value">${escapeHtml(rntStatusLabel)}</span>
       </div>
       ` : ''}
     </div>
 
     <div class="section">
       <h3>${isSpanish ? 'Servicios Solicitados' : 'Requested Services'}</h3>
-      <div class="value">${servicesText}</div>
+      <div class="value">${escapeHtml(servicesText)}</div>
     </div>
 
     <div class="section">
       <h3>${isSpanish ? 'Tipos de Servicios a Ofrecer' : 'Types of Services to Offer'}</h3>
-      <div class="value">${tourTypesText}</div>
+      <div class="value">${escapeHtml(tourTypesText)}</div>
     </div>
 
     <div class="section">
       <h3>${isSpanish ? 'Descripción del Proyecto' : 'Project Description'}</h3>
-      <div class="value">${projectDescription || (isSpanish ? '(No especificado)' : '(Not specified)')}</div>
+      <div class="value">${escapeHtml(projectDescription) || (isSpanish ? '(No especificado)' : '(Not specified)')}</div>
     </div>
   </div>
 </body>
@@ -277,12 +278,12 @@ export async function POST(request: Request) {
     <div class="welcome-box">
       <div class="check-icon">✓</div>
       <h2 style="color: #dc2626; margin: 15px 0;">¡Tu Solicitud Ha Sido Recibida!</h2>
-      <p style="color: #475569; font-size: 16px; margin: 10px 0;">Hola <strong>${responsibleName}</strong>,</p>
-      <p style="color: #475569; font-size: 16px; margin: 10px 0;">Hemos recibido tu solicitud de apoyo para tu agencia <strong>${agencyName}</strong>.</p>
+      <p style="color: #475569; font-size: 16px; margin: 10px 0;">Hola <strong>${escapeHtml(responsibleName)}</strong>,</p>
+      <p style="color: #475569; font-size: 16px; margin: 10px 0;">Hemos recibido tu solicitud de apoyo para tu agencia <strong>${escapeHtml(agencyName)}</strong>.</p>
     </div>
     <div class="section">
       <div class="section-title">📋 Resumen de tu Solicitud</div>
-      <p style="color: #475569; margin: 0;"><strong>Agencia:</strong> ${agencyName}</p>
+      <p style="color: #475569; margin: 0;"><strong>Agencia:</strong> ${escapeHtml(agencyName)}</p>
       <p style="color: #475569; margin: 10px 0 0 0;"><strong>Fecha de solicitud:</strong> ${new Date().toLocaleDateString('es-MX')}</p>
     </div>
     <div style="background: white; padding: 25px; border-radius: 8px; text-align: center;">
@@ -291,7 +292,7 @@ export async function POST(request: Request) {
       <p style="color: #dc2626; margin: 15px 0; font-weight: bold;">Este servicio no tiene costo.</p>
       <p style="color: #475569; margin: 15px 0;">Si necesitas atención inmediata, puedes contactarnos:</p>
       <p style="color: #475569; margin: 5px 0;">📞 <a href="https://wa.me/525547127668" style="color: #10b981; text-decoration: none;">+52 55 47127668</a> (WhatsApp)</p>
-      <p style="color: #475569; margin: 5px 0;">📧 <a href="mailto:${email}" style="color: #dc2626;">${email}</a></p>
+      <p style="color: #475569; margin: 5px 0;">📧 <a href="mailto:${escapeHtml(email)}" style="color: #dc2626;">${escapeHtml(email)}</a></p>
     </div>
     <div class="footer">
       <p style="margin: 0;"><strong>ToursRed</strong></p>
@@ -331,12 +332,12 @@ export async function POST(request: Request) {
     <div class="welcome-box">
       <div class="check-icon">✓</div>
       <h2 style="color: #dc2626; margin: 15px 0;">Your Request Has Been Received!</h2>
-      <p style="color: #475569; font-size: 16px; margin: 10px 0;">Hello <strong>${responsibleName}</strong>,</p>
-      <p style="color: #475569; font-size: 16px; margin: 10px 0;">We have received your support request for your agency <strong>${agencyName}</strong>.</p>
+      <p style="color: #475569; font-size: 16px; margin: 10px 0;">Hello <strong>${escapeHtml(responsibleName)}</strong>,</p>
+      <p style="color: #475569; font-size: 16px; margin: 10px 0;">We have received your support request for your agency <strong>${escapeHtml(agencyName)}</strong>.</p>
     </div>
     <div class="section">
       <div class="section-title">📋 Request Summary</div>
-      <p style="color: #475569; margin: 0;"><strong>Agency:</strong> ${agencyName}</p>
+      <p style="color: #475569; margin: 0;"><strong>Agency:</strong> ${escapeHtml(agencyName)}</p>
       <p style="color: #475569; margin: 10px 0 0 0;"><strong>Request date:</strong> ${new Date().toLocaleDateString('en-US')}</p>
     </div>
     <div style="background: white; padding: 25px; border-radius: 8px; text-align: center;">
@@ -345,7 +346,7 @@ export async function POST(request: Request) {
       <p style="color: #dc2626; margin: 15px 0; font-weight: bold;">This service is free.</p>
       <p style="color: #475569; margin: 15px 0;">If you need immediate assistance, you can contact us:</p>
       <p style="color: #475569; margin: 5px 0;">📞 <a href="https://wa.me/525547127668" style="color: #10b981; text-decoration: none;">+52 55 47127668</a> (WhatsApp)</p>
-      <p style="color: #475569; margin: 5px 0;">📧 <a href="mailto:${email}" style="color: #dc2626;">${email}</a></p>
+      <p style="color: #475569; margin: 5px 0;">📧 <a href="mailto:${escapeHtml(email)}" style="color: #dc2626;">${escapeHtml(email)}</a></p>
     </div>
     <div class="footer">
       <p style="margin: 0;"><strong>ToursRed</strong></p>
