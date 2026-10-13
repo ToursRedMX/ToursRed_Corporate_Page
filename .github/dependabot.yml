@@ -1,0 +1,33 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      # react y react-dom comparten peer dependency: subir uno sin el otro
+      # produce un PR que ni siquiera instala (npm ci falla con ERESOLVE).
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+      # next, @next/* y eslint-config-next van fijados a la MISMA version
+      # exacta (16.3.2) en package.json; subir uno solo deja el arbol roto.
+      nextjs:
+        patterns:
+          - "next"
+          - "@next/*"
+          - "eslint-config-next"
+      # Los ~30 paquetes de Radix se actualizan casi a diario; agrupados
+      # llega un solo PR semanal en vez de decenas.
+      radix-ui:
+        patterns:
+          - "@radix-ui/*"
+    ignore:
+      # El proyecto usa tailwind.config.ts de la v3; la v4 cambia por
+      # completo la configuracion y requiere una migracion planeada.
+      - dependency-name: "tailwindcss"
+        update-types: ["version-update:semver-major"]
