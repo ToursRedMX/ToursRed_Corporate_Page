@@ -238,6 +238,20 @@ export function Footer({ lang, dictionary }: FooterProps) {
                 height={80}
                 className="h-20 w-auto"
               />
+              <a
+                href="/HechoEnMexico.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-opacity hover:opacity-80"
+              >
+                <Image
+                  src="/LogoHechoEnMexico.jpg"
+                  alt="Hecho en México"
+                  width={80}
+                  height={80}
+                  className="h-20 w-auto"
+                />
+              </a>
             </div>
             <div className="text-center md:text-right">
               <p className="text-gray-400 text-sm">
