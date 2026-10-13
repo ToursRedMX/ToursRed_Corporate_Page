@@ -198,9 +198,9 @@ export function Footer({ lang, dictionary }: FooterProps) {
         </div>
 
         <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex flex-wrap items-center gap-6">
-              <div className="flex items-center gap-3">
+          <div className="flex flex-col xl:flex-row xl:justify-between items-center gap-6">
+            <div className="flex flex-wrap items-center justify-center xl:justify-start gap-x-6 gap-y-4">
+              <div className="flex items-center gap-3 shrink-0">
                 <a
                   href="https://rnt-consulta.sectur.gob.mx/"
                   target="_blank"
@@ -212,7 +212,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
                     alt="Secretaría de Turismo - Registro Nacional de Turismo"
                     width={200}
                     height={80}
-                    className="h-20 w-auto"
+                    className="h-16 w-auto"
                   />
                 </a>
                 <p className="text-gray-400 text-sm">RNT: 04090165582a1</p>
@@ -228,7 +228,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
                   alt="AMAV Ciudad de México"
                   width={200}
                   height={80}
-                  className="h-20 w-auto"
+                  className="h-16 w-auto"
                 />
               </a>
               <Image
@@ -236,7 +236,7 @@ export function Footer({ lang, dictionary }: FooterProps) {
                 alt="FEMATUR"
                 width={200}
                 height={80}
-                className="h-20 w-auto"
+                className="h-16 w-auto"
               />
               <a
                 href="/HechoEnMexico.pdf"
@@ -249,11 +249,11 @@ export function Footer({ lang, dictionary }: FooterProps) {
                   alt="Hecho en México"
                   width={80}
                   height={80}
-                  className="h-20 w-auto"
+                  className="h-16 w-auto"
                 />
               </a>
             </div>
-            <div className="text-center md:text-right">
+            <div className="text-center xl:text-right">
               <p className="text-gray-400 text-sm">
                 © {new Date().getFullYear()} {dictionary.footer.company}.{' '}
                 {dictionary.footer.rights}.
