@@ -234,7 +234,7 @@ export function CarRentalQuoteForm({ isOpen, onClose, lang, dict }: CarRentalQuo
                       setPickupDate(newDate);
                       setPickupCalendarOpen(false);
                     }}
-                    initialFocus
+                    autoFocus
                     disabled={(date) => date < new Date()}
                   />
                 </PopoverContent>
@@ -264,7 +264,7 @@ export function CarRentalQuoteForm({ isOpen, onClose, lang, dict }: CarRentalQuo
                       setReturnDate(newDate);
                       setReturnCalendarOpen(false);
                     }}
-                    initialFocus
+                    autoFocus
                     disabled={(date) => date < (pickupDate || new Date())}
                   />
                 </PopoverContent>

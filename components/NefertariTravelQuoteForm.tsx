@@ -206,7 +206,7 @@ export function NefertariTravelQuoteForm({ isOpen, onClose, lang, dict }: Nefert
                       setDate(newDate);
                       setCalendarOpen(false);
                     }}
-                    initialFocus
+                    autoFocus
                     disabled={(date) => date < new Date()}
                   />
                 </PopoverContent>
