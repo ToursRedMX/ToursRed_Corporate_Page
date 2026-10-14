@@ -1,12 +1,15 @@
 import { NextResponse } from 'next/server';
 import { sendExoticcaQuoteEmail } from '@/lib/smtp2go';
 import { verifyAntiSpam } from '@/lib/antispam';
+import { guardRequest, getClientIp } from '@/lib/apiGuard';
 import { sendTikTokServerEvent } from '@/lib/tiktokServerEvents';
 import { getSupabaseServerClient } from '@/lib/supabaseServer';
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
+    const guard = await guardRequest(request);
+    if (!guard.ok) return guard.response;
+    const body = guard.body;
 
     const spamCheck = verifyAntiSpam(body);
     if (!spamCheck.success) {
@@ -44,7 +47,7 @@ export async function POST(request: Request) {
     let ip: string | undefined;
     let userAgent: string | undefined;
     try {
-      ip = request.headers.get('x-forwarded-for') ?? undefined;
+      ip = getClientIp(request);
       userAgent = request.headers.get('user-agent') ?? undefined;
     } catch {
       // headers() may throw outside request context in some Next.js versions
