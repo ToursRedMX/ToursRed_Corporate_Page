@@ -55,8 +55,8 @@ export function resetTurnstile(): void {
 }
 
 /**
- * Widget de Turnstile. Es invisible salvo que Cloudflare necesite una
- * interacción. Si no carga (bloqueador de anuncios, sin red), el formulario sigue
+ * Widget de Turnstile, siempre visible en los formularios para que el visitante
+ * vea que la verificación de seguridad está activa. Si no carga (bloqueador de anuncios, sin red), el formulario sigue
  * funcionando y el servidor decide si exige o no la verificación.
  */
 export function TurnstileWidget() {
@@ -69,7 +69,7 @@ export function TurnstileWidget() {
         if (cancelled || !containerRef.current || !window.turnstile) return;
         currentWidgetId = window.turnstile.render(containerRef.current, {
           sitekey: SITE_KEY,
-          appearance: 'interaction-only',
+          appearance: 'always',
           theme: 'light',
           // Un fallo del widget no debe romper la página ni llenar la consola de
           // errores sin capturar; el servidor decide qué hacer sin token.
@@ -96,5 +96,5 @@ export function TurnstileWidget() {
     };
   }, []);
 
-  return <div ref={containerRef} />;
+  return <div ref={containerRef} className="flex min-h-[65px] justify-center sm:justify-start" />;
 }
