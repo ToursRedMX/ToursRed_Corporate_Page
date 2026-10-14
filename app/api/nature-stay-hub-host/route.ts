@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { sendGenericEmail } from '@/lib/smtp2go';
+import { escapeHtml, safeHttpUrl } from '@/lib/escapeHtml';
 import { verifyAntiSpam } from '@/lib/antispam';
 import { sendTikTokServerEvent } from '@/lib/tiktokServerEvents';
 import { getSupabaseServerClient } from '@/lib/supabaseServer';
@@ -154,15 +155,15 @@ export async function POST(request: Request) {
                 <div class="section-title">Datos del Anfitrión</div>
                 <div class="field">
                   <div class="field-label">Nombre completo:</div>
-                  <div class="field-value">${hostName}</div>
+                  <div class="field-value">${escapeHtml(hostName)}</div>
                 </div>
                 <div class="field">
                   <div class="field-label">Correo electrónico:</div>
-                  <div class="field-value">${hostEmail}</div>
+                  <div class="field-value">${escapeHtml(hostEmail)}</div>
                 </div>
                 <div class="field">
                   <div class="field-label">Teléfono / WhatsApp:</div>
-                  <div class="field-value">${hostPhone}</div>
+                  <div class="field-value">${escapeHtml(hostPhone)}</div>
                 </div>
               </div>
 
@@ -170,23 +171,23 @@ export async function POST(request: Request) {
                 <div class="section-title">Datos del Alojamiento</div>
                 <div class="field">
                   <div class="field-label">Nombre del alojamiento:</div>
-                  <div class="field-value">${accommodationName}</div>
+                  <div class="field-value">${escapeHtml(accommodationName)}</div>
                 </div>
                 <div class="field">
                   <div class="field-label">Tipo de alojamiento:</div>
-                  <div class="field-value">${accommodationTypeDisplay}</div>
+                  <div class="field-value">${escapeHtml(accommodationTypeDisplay)}</div>
                 </div>
                 <div class="field">
                   <div class="field-label">Ubicación (Estado / Municipio):</div>
-                  <div class="field-value">${location}</div>
+                  <div class="field-value">${escapeHtml(location)}</div>
                 </div>
                 <div class="field">
                   <div class="field-label">Número aproximado de unidades o capacidad:</div>
-                  <div class="field-value">${capacity}</div>
+                  <div class="field-value">${escapeHtml(capacity)}</div>
                 </div>
                 <div class="field">
                   <div class="field-label">¿Se encuentra en un entorno natural?:</div>
-                  <div class="field-value">${naturalEnvironmentDisplay}</div>
+                  <div class="field-value">${escapeHtml(naturalEnvironmentDisplay)}</div>
                 </div>
               </div>
 
@@ -196,13 +197,13 @@ export async function POST(request: Request) {
                   ${socialLinks ? `
                     <div class="field">
                       <div class="field-label">Enlaces a redes sociales / plataformas:</div>
-                      <div class="field-value">${socialLinks}</div>
+                      <div class="field-value">${escapeHtml(socialLinks)}</div>
                     </div>
                   ` : ''}
                   ${googleMapsUrl ? `
                     <div class="field">
                       <div class="field-label">Ubicación en Google Maps:</div>
-                      <div class="field-value"><a href="${googleMapsUrl}">${googleMapsUrl}</a></div>
+                      <div class="field-value"><a href="${safeHttpUrl(googleMapsUrl)}">${escapeHtml(googleMapsUrl)}</a></div>
                     </div>
                   ` : ''}
                 </div>
@@ -314,26 +315,26 @@ export async function POST(request: Request) {
                 <p>Registro recibido</p>
               </div>
               <div class="content">
-                <p class="greeting">Hola ${hostName},</p>
+                <p class="greeting">Hola ${escapeHtml(hostName)},</p>
                 <p>Hemos recibido tu registro como anfitrión en Nature Stay Hub. Nuestro equipo revisará tu información y se pondrá en contacto contigo pronto.</p>
 
                 <div class="summary">
                   <div class="summary-title">Resumen de tu registro</div>
                   <div class="field">
                     <span class="field-label">Alojamiento:</span>
-                    <span class="field-value">${accommodationName}</span>
+                    <span class="field-value">${escapeHtml(accommodationName)}</span>
                   </div>
                   <div class="field">
                     <span class="field-label">Tipo:</span>
-                    <span class="field-value">${accommodationTypeDisplay}</span>
+                    <span class="field-value">${escapeHtml(accommodationTypeDisplay)}</span>
                   </div>
                   <div class="field">
                     <span class="field-label">Ubicación:</span>
-                    <span class="field-value">${location}</span>
+                    <span class="field-value">${escapeHtml(location)}</span>
                   </div>
                   <div class="field">
                     <span class="field-label">Capacidad:</span>
-                    <span class="field-value">${capacity}</span>
+                    <span class="field-value">${escapeHtml(capacity)}</span>
                   </div>
                 </div>
 

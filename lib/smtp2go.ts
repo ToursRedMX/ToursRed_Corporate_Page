@@ -1,3 +1,5 @@
+import { escapeHtmlDeep } from './escapeHtml';
+
 export interface AgencyFormData {
   firstName: string;
   lastName: string;
@@ -137,7 +139,8 @@ interface SMTP2GoEmailPayload {
 
 const LOGO_URL = 'https://www.toursred.com.mx/logo.png';
 
-const createInternalEmailTemplate = (data: AgencyFormData): string => {
+const createInternalEmailTemplate = (rawData: AgencyFormData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -337,7 +340,8 @@ const createInternalEmailTemplate = (data: AgencyFormData): string => {
   `;
 };
 
-const createConfirmationEmailTemplate = (data: AgencyFormData): string => {
+const createConfirmationEmailTemplate = (rawData: AgencyFormData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -605,7 +609,8 @@ export async function sendAgencyRegistrationEmail(
   return { success: true };
 }
 
-const createContactInternalEmailTemplate = (data: ContactFormData): string => {
+const createContactInternalEmailTemplate = (rawData: ContactFormData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -751,7 +756,8 @@ const createContactInternalEmailTemplate = (data: ContactFormData): string => {
   `;
 };
 
-const createContactConfirmationEmailTemplate = (data: ContactFormData): string => {
+const createContactConfirmationEmailTemplate = (rawData: ContactFormData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -930,7 +936,8 @@ export async function sendContactFormEmail(
   return { success: true };
 }
 
-const createMegaTravelInternalEmailTemplate = (data: MegaTravelQuoteData): string => {
+const createMegaTravelInternalEmailTemplate = (rawData: MegaTravelQuoteData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -1096,7 +1103,8 @@ const createMegaTravelInternalEmailTemplate = (data: MegaTravelQuoteData): strin
   `;
 };
 
-const createMegaTravelConfirmationEmailTemplate = (data: MegaTravelQuoteData): string => {
+const createMegaTravelConfirmationEmailTemplate = (rawData: MegaTravelQuoteData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -1311,7 +1319,8 @@ export async function sendMegaTravelQuoteEmail(
   return { success: true };
 }
 
-const createNefertariTravelInternalEmailTemplate = (data: NefertariTravelQuoteData): string => {
+const createNefertariTravelInternalEmailTemplate = (rawData: NefertariTravelQuoteData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -1479,7 +1488,8 @@ const createNefertariTravelInternalEmailTemplate = (data: NefertariTravelQuoteDa
   `;
 };
 
-const createNefertariTravelConfirmationEmailTemplate = (data: NefertariTravelQuoteData): string => {
+const createNefertariTravelConfirmationEmailTemplate = (rawData: NefertariTravelQuoteData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -1680,7 +1690,8 @@ export async function sendNefertariTravelQuoteEmail(
   return { success: true };
 }
 
-const createExoticcaInternalEmailTemplate = (data: ExoticcaQuoteData): string => {
+const createExoticcaInternalEmailTemplate = (rawData: ExoticcaQuoteData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -1848,7 +1859,8 @@ const createExoticcaInternalEmailTemplate = (data: ExoticcaQuoteData): string =>
   `;
 };
 
-const createExoticcaConfirmationEmailTemplate = (data: ExoticcaQuoteData): string => {
+const createExoticcaConfirmationEmailTemplate = (rawData: ExoticcaQuoteData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -2068,7 +2080,8 @@ export async function sendGenericEmail(params: {
   return await sendEmail(apiKey, apiUrl, params.to, params.subject, params.html);
 }
 
-const createTravelInsuranceInternalEmailTemplate = (data: TravelInsuranceQuoteData): string => {
+const createTravelInsuranceInternalEmailTemplate = (rawData: TravelInsuranceQuoteData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -2268,7 +2281,8 @@ const createTravelInsuranceInternalEmailTemplate = (data: TravelInsuranceQuoteDa
   `;
 };
 
-const createTravelInsuranceConfirmationEmailTemplate = (data: TravelInsuranceQuoteData): string => {
+const createTravelInsuranceConfirmationEmailTemplate = (rawData: TravelInsuranceQuoteData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -2473,7 +2487,8 @@ export async function sendTravelInsuranceQuoteEmail(
   return { success: true };
 }
 
-const createTravelerServicesInternalEmailTemplate = (data: TravelerServicesRequestData): string => {
+const createTravelerServicesInternalEmailTemplate = (rawData: TravelerServicesRequestData): string => {
+  const data = escapeHtmlDeep(rawData);
   const serviceTypeLabel = {
     itinerary: 'Armado de itinerario a la medida',
     package: 'Viaje o paquete a la medida',
@@ -2741,7 +2756,8 @@ const createTravelerServicesInternalEmailTemplate = (data: TravelerServicesReque
   `;
 };
 
-const createTravelerServicesConfirmationEmailTemplate = (data: TravelerServicesRequestData): string => {
+const createTravelerServicesConfirmationEmailTemplate = (rawData: TravelerServicesRequestData): string => {
+  const data = escapeHtmlDeep(rawData);
   const serviceTypeLabel = {
     itinerary: 'Armado de itinerario a la medida',
     package: 'Viaje o paquete a la medida',
@@ -2927,7 +2943,8 @@ export async function sendTravelerServicesRequestEmail(
   return { success: true };
 }
 
-const createCarRentalInternalEmailTemplate = (data: CarRentalQuoteData): string => {
+const createCarRentalInternalEmailTemplate = (rawData: CarRentalQuoteData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -2974,7 +2991,8 @@ const createCarRentalInternalEmailTemplate = (data: CarRentalQuoteData): string 
 </html>`;
 };
 
-const createCarRentalConfirmationEmailTemplate = (data: CarRentalQuoteData): string => {
+const createCarRentalConfirmationEmailTemplate = (rawData: CarRentalQuoteData): string => {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -3017,7 +3035,8 @@ const createCarRentalConfirmationEmailTemplate = (data: CarRentalQuoteData): str
 </html>`;
 };
 
-function createEsimQuoteEmailTemplate(data: EsimQuoteData): string {
+function createEsimQuoteEmailTemplate(rawData: EsimQuoteData): string {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
@@ -3068,7 +3087,8 @@ function createEsimQuoteEmailTemplate(data: EsimQuoteData): string {
 </html>`;
 }
 
-function createEsimQuoteConfirmationTemplate(data: EsimQuoteData): string {
+function createEsimQuoteConfirmationTemplate(rawData: EsimQuoteData): string {
+  const data = escapeHtmlDeep(rawData);
   return `
 <!DOCTYPE html>
 <html>
