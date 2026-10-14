@@ -19,6 +19,13 @@ for = "/*"
 [headers.values]
 X-Frame-Options = "DENY"
 X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Strict-Transport-Security = "max-age=31536000"
+# No se bloquea "payment": los iframes de cotizadores lo usan (allow="payment").
+Permissions-Policy = "camera=(), microphone=(), geolocation=(), usb=()"
+# CSP acotado a directivas que no dependen de scripts de terceros. Una politica
+# completa (script-src) requiere inventariar lo que carga Google Tag Manager.
+Content-Security-Policy = "frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self'"
 
 [[headers]]
 for = "/*.html"
