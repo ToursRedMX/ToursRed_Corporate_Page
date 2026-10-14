@@ -289,7 +289,7 @@ export function MegaTravelQuoteForm({ isOpen, onClose, lang, dict }: MegaTravelQ
                       setDate(newDate);
                       setCalendarOpen(false);
                     }}
-                    initialFocus
+                    autoFocus
                     disabled={(date) => date < new Date()}
                   />
                 </PopoverContent>

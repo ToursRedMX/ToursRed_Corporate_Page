@@ -206,7 +206,7 @@ export function ExoticcaQuoteForm({ isOpen, onClose, lang, dict }: ExoticcaQuote
                       setDate(newDate);
                       setCalendarOpen(false);
                     }}
-                    initialFocus
+                    autoFocus
                     disabled={(date) => date < new Date()}
                   />
                 </PopoverContent>
