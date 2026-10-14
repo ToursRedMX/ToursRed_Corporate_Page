@@ -23,6 +23,7 @@ import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { FormConsentSection } from './FormConsentSection';
 import { trackTikTokEvent, trackTikTokIdentify } from './TikTokPixel';
+import { getTurnstileToken, resetTurnstile } from '@/components/TurnstileWidget';
 
 interface MegaTravelQuoteFormProps {
   isOpen: boolean;
@@ -77,7 +78,7 @@ export function MegaTravelQuoteForm({ isOpen, onClose, lang, dict }: MegaTravelQ
         body: JSON.stringify({
           ...formData,
           travelDate: date ? format(date, 'dd/MM/yyyy') : undefined,
-          _hp: hpField?.value || '',
+          _hp: hpField?.value || '', turnstileToken: getTurnstileToken(),
           acceptContact,
           acceptPrivacy,
         }),
@@ -116,6 +117,7 @@ export function MegaTravelQuoteForm({ isOpen, onClose, lang, dict }: MegaTravelQ
         variant: 'destructive',
       });
     } finally {
+      resetTurnstile();
       setIsSubmitting(false);
     }
   };

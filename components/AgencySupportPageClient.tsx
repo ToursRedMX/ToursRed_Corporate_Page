@@ -14,6 +14,7 @@ import { Locale } from '@/lib/i18n/config';
 import { ArrowRight } from 'lucide-react';
 import { FormConsentSection } from './FormConsentSection';
 import { trackTikTokEvent, trackTikTokIdentify } from './TikTokPixel';
+import { getTurnstileToken, resetTurnstile } from '@/components/TurnstileWidget';
 
 interface AgencySupportPageClientProps {
   lang: Locale;
@@ -185,7 +186,7 @@ export function AgencySupportPageClient({ lang }: AgencySupportPageClientProps) 
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...formData,
-          _hp: hpField?.value || '',
+          _hp: hpField?.value || '', turnstileToken: getTurnstileToken(),
           acceptContact,
           acceptPrivacy,
           lang,
@@ -224,6 +225,7 @@ export function AgencySupportPageClient({ lang }: AgencySupportPageClientProps) 
     } catch (error) {
       toast.error(t.error);
     } finally {
+      resetTurnstile();
       setIsLoading(false);
     }
   };

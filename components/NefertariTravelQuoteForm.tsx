@@ -16,6 +16,7 @@ import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { FormConsentSection } from './FormConsentSection';
 import { trackTikTokEvent, trackTikTokIdentify } from './TikTokPixel';
+import { getTurnstileToken, resetTurnstile } from '@/components/TurnstileWidget';
 
 interface NefertariTravelQuoteFormProps {
   isOpen: boolean;
@@ -69,7 +70,7 @@ export function NefertariTravelQuoteForm({ isOpen, onClose, lang, dict }: Nefert
         body: JSON.stringify({
           ...formData,
           travelDate: date ? format(date, 'dd/MM/yyyy') : undefined,
-          _hp: hpField?.value || '',
+          _hp: hpField?.value || '', turnstileToken: getTurnstileToken(),
           acceptContact,
           acceptPrivacy,
         }),
@@ -107,6 +108,7 @@ export function NefertariTravelQuoteForm({ isOpen, onClose, lang, dict }: Nefert
         variant: 'destructive',
       });
     } finally {
+      resetTurnstile();
       setIsSubmitting(false);
     }
   };

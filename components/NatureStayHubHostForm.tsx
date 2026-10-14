@@ -36,6 +36,7 @@ import { Loader as Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { FormConsentSection } from './FormConsentSection';
 import { trackTikTokEvent, trackTikTokIdentify } from '@/components/TikTokPixel';
+import { getTurnstileToken, resetTurnstile } from '@/components/TurnstileWidget';
 
 const formSchema = z.object({
   hostName: z.string().min(2, 'El nombre debe tener al menos 2 caracteres'),
@@ -173,7 +174,7 @@ export default function NatureStayHubHostForm({ open, onOpenChange, lang }: Natu
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ ...data, _hp: hpField?.value || '' }),
+        body: JSON.stringify({ ...data, _hp: hpField?.value || '', turnstileToken: getTurnstileToken() }),
       });
 
       const result = await response.json();
@@ -200,6 +201,7 @@ export default function NatureStayHubHostForm({ open, onOpenChange, lang }: Natu
         variant: 'destructive',
       });
     } finally {
+      resetTurnstile();
       setIsSubmitting(false);
     }
   }

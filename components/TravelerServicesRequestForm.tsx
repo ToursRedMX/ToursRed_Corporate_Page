@@ -13,6 +13,7 @@ import { toast } from '@/hooks/use-toast';
 import { X } from 'lucide-react';
 import { FormConsentSection } from './FormConsentSection';
 import { trackTikTokEvent, trackTikTokIdentify } from './TikTokPixel';
+import { getTurnstileToken, resetTurnstile } from '@/components/TurnstileWidget';
 
 interface TravelerServicesRequestFormProps {
   lang: string;
@@ -113,7 +114,7 @@ export function TravelerServicesRequestForm({ lang, isOpen = false, onClose }: T
           ...formData,
           serviceType,
           lang,
-          _hp: hpField?.value || '',
+          _hp: hpField?.value || '', turnstileToken: getTurnstileToken(),
           acceptContact,
           acceptPrivacy,
         }),
@@ -166,6 +167,7 @@ export function TravelerServicesRequestForm({ lang, isOpen = false, onClose }: T
         variant: 'destructive',
       });
     } finally {
+      resetTurnstile();
       setIsSubmitting(false);
     }
   };

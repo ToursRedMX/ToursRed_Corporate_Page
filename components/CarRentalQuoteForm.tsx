@@ -23,6 +23,7 @@ import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { FormConsentSection } from './FormConsentSection';
 import { trackTikTokEvent, trackTikTokIdentify } from './TikTokPixel';
+import { getTurnstileToken, resetTurnstile } from '@/components/TurnstileWidget';
 
 interface CarRentalQuoteFormProps {
   isOpen: boolean;
@@ -79,7 +80,7 @@ export function CarRentalQuoteForm({ isOpen, onClose, lang, dict }: CarRentalQuo
           ...formData,
           pickupDate: pickupDate ? format(pickupDate, 'dd/MM/yyyy') : undefined,
           returnDate: returnDate ? format(returnDate, 'dd/MM/yyyy') : undefined,
-          _hp: hpField?.value || '',
+          _hp: hpField?.value || '', turnstileToken: getTurnstileToken(),
           acceptContact,
           acceptPrivacy,
         }),
@@ -119,6 +120,7 @@ export function CarRentalQuoteForm({ isOpen, onClose, lang, dict }: CarRentalQuo
         variant: 'destructive',
       });
     } finally {
+      resetTurnstile();
       setIsSubmitting(false);
     }
   };

@@ -20,6 +20,7 @@ import Link from 'next/link';
 import { useToast } from '@/hooks/use-toast';
 import { FormConsentSection } from '@/components/FormConsentSection';
 import { trackTikTokEvent, trackTikTokIdentify } from '@/components/TikTokPixel';
+import { getTurnstileToken, resetTurnstile } from '@/components/TurnstileWidget';
 
 export default function ContactPage() {
   const params = useParams();
@@ -119,7 +120,7 @@ export default function ContactPage() {
         },
         body: JSON.stringify({
           ...formData,
-          _hp: hpField?.value || '',
+          _hp: hpField?.value || '', turnstileToken: getTurnstileToken(),
           acceptContact,
           acceptPrivacy,
           lang,
@@ -161,6 +162,7 @@ export default function ContactPage() {
         variant: 'destructive',
       });
     } finally {
+      resetTurnstile();
       setIsSubmitting(false);
     }
   };

@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { verifyTurnstile } from './turnstile';
 
 /** Tamaño máximo del cuerpo de una petición (bytes aprox., en caracteres). */
 const MAX_BODY_CHARS = 40_000;
@@ -9,6 +10,9 @@ const MAX_DEPTH = 3;
 const MAX_FIELD_CHARS = 1_000;
 /** Campos de texto libre (mensajes, comentarios, descripciones, links). */
 const MAX_LONG_FIELD_CHARS = 5_000;
+/** Token que genera el widget de Turnstile en el navegador (hasta 2048 caracteres). */
+const TURNSTILE_TOKEN_FIELD = 'turnstileToken';
+const MAX_TURNSTILE_TOKEN_CHARS = 2_100;
 const LONG_FIELD = /(message|comments|details|observations|description|notes|links)$/i;
 
 /** Máximo de envíos por IP: ráfaga corta y ventana de una hora. */
@@ -66,7 +70,12 @@ export function validatePayloadShape(body: unknown): string | null {
 
   const visit = (value: unknown, key: string, depth: number): string | null => {
     if (typeof value === 'string') {
-      const max = LONG_FIELD.test(key) ? MAX_LONG_FIELD_CHARS : MAX_FIELD_CHARS;
+      const max =
+        key === TURNSTILE_TOKEN_FIELD
+          ? MAX_TURNSTILE_TOKEN_CHARS
+          : LONG_FIELD.test(key)
+            ? MAX_LONG_FIELD_CHARS
+            : MAX_FIELD_CHARS;
       return value.length > max ? `El campo "${key}" es demasiado largo` : null;
     }
     if (Array.isArray(value)) {
@@ -141,6 +150,33 @@ export async function guardRequest(request: Request): Promise<GuardResult> {
   const shapeError = validatePayloadShape(body);
   if (shapeError) {
     return { ok: false, response: fail(shapeError, 400) };
+  }
+
+  // Turnstile (captcha de Cloudflare). Solo actúa si TURNSTILE_SECRET_KEY existe.
+  // Por defecto es "modo vigilancia": verifica y deja constancia en los logs, pero
+  // no bloquea a nadie. Con TURNSTILE_ENFORCE=true rechaza los envíos sin un token
+  // válido. Si Cloudflare no responde, nunca se bloquea al visitante.
+  const turnstileSecret = process.env.TURNSTILE_SECRET_KEY;
+  if (turnstileSecret) {
+    const enforce = process.env.TURNSTILE_ENFORCE === 'true';
+    const token = (body as Record<string, unknown>)[TURNSTILE_TOKEN_FIELD];
+    const result = await verifyTurnstile(turnstileSecret, token, getClientIp(request));
+    if (result.ok) {
+      console.log(`[turnstile] válido (hostname: ${result.hostname ?? 'desconocido'})`);
+    } else {
+      console.warn(
+        `[turnstile] ${enforce && !result.unavailable ? 'BLOQUEADO' : 'modo vigilancia, no se bloquea'}: ${result.reason}`
+      );
+      if (enforce && !result.unavailable) {
+        return {
+          ok: false,
+          response: fail(
+            'No se pudo completar la verificación de seguridad. Recarga la página e inténtalo de nuevo.',
+            400
+          ),
+        };
+      }
+    }
   }
 
   return { ok: true, body };

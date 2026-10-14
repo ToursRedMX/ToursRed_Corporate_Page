@@ -18,6 +18,7 @@ import { Locale } from '@/lib/i18n/config';
 import { useToast } from '@/hooks/use-toast';
 import { FormConsentSection } from '@/components/FormConsentSection';
 import { trackTikTokEvent, trackTikTokIdentify } from '@/components/TikTokPixel';
+import { getTurnstileToken, resetTurnstile } from '@/components/TurnstileWidget';
 
 const MEXICAN_STATES = [
   'Aguascalientes',
@@ -265,7 +266,7 @@ export default function JoinAgencyPage() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ ...formData, _hp: hpField?.value || '', acceptContact, acceptPrivacy }),
+        body: JSON.stringify({ ...formData, _hp: hpField?.value || '', turnstileToken: getTurnstileToken(), acceptContact, acceptPrivacy }),
       });
 
       const data = await response.json();
@@ -311,6 +312,7 @@ export default function JoinAgencyPage() {
         message: dict.messages.error,
       });
     } finally {
+      resetTurnstile();
       setIsSubmitting(false);
     }
   };

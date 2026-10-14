@@ -3,6 +3,7 @@
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import Link from 'next/link';
+import { TurnstileWidget } from '@/components/TurnstileWidget';
 
 interface FormConsentSectionProps {
   sectionNumber?: number;
@@ -95,6 +96,8 @@ export function FormConsentSection({
           defaultValue=""
         />
       </div>
+
+      <TurnstileWidget />
     </div>
   );
 }

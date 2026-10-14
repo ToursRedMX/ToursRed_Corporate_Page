@@ -21,6 +21,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import { X } from 'lucide-react';
 import { FormConsentSection } from './FormConsentSection';
 import { trackTikTokEvent, trackTikTokIdentify } from './TikTokPixel';
+import { getTurnstileToken, resetTurnstile } from '@/components/TurnstileWidget';
 
 interface TravelInsuranceQuoteFormProps {
   lang: string;
@@ -111,7 +112,7 @@ export function TravelInsuranceQuoteForm({ lang, dict, isOpen = false, onClose }
         body: JSON.stringify({
           ...formData,
           lang,
-          _hp: hpField?.value || '',
+          _hp: hpField?.value || '', turnstileToken: getTurnstileToken(),
           acceptContact,
           acceptPrivacy,
         }),
@@ -158,6 +159,7 @@ export function TravelInsuranceQuoteForm({ lang, dict, isOpen = false, onClose }
         variant: 'destructive',
       });
     } finally {
+      resetTurnstile();
       setIsSubmitting(false);
     }
   };
