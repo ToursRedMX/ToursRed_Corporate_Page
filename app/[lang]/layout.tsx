@@ -29,6 +29,10 @@ export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
+// Solo existen los idiomas de `locales`. Sin esto, una ruta como /noexiste.png (o un
+// archivo faltante) se trataba como un idioma y devolvía un error 500 en vez de un 404.
+export const dynamicParams = false;
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
