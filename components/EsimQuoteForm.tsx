@@ -19,6 +19,7 @@ import { toast } from '@/hooks/use-toast';
 import { FormConsentSection } from './FormConsentSection';
 import { trackTikTokEvent, trackTikTokIdentify } from './TikTokPixel';
 import { Wifi } from 'lucide-react';
+import { getTurnstileToken, resetTurnstile } from '@/components/TurnstileWidget';
 
 interface EsimQuoteFormProps {
   lang: string;
@@ -82,7 +83,7 @@ export function EsimQuoteForm({ lang, dict, isOpen, onClose }: EsimQuoteFormProp
         body: JSON.stringify({
           ...formData,
           lang,
-          _hp: hpField?.value || '',
+          _hp: hpField?.value || '', turnstileToken: getTurnstileToken(),
           acceptContact,
           acceptPrivacy,
         }),
@@ -122,6 +123,7 @@ export function EsimQuoteForm({ lang, dict, isOpen, onClose }: EsimQuoteFormProp
         variant: 'destructive',
       });
     } finally {
+      resetTurnstile();
       setIsSubmitting(false);
     }
   };
