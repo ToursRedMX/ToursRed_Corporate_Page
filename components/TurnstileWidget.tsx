@@ -3,8 +3,9 @@
 import { useEffect, useRef } from 'react';
 
 // Llave PÚBLICA del widget de Cloudflare Turnstile (la misma que usa el
-// marketplace). Se puede cambiar con NEXT_PUBLIC_TURNSTILE_SITE_KEY.
-const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '0x4AAAAAAEPafX7zzdCsVdYB';
+// marketplace). Es pública por diseño, así que va fija en el código: una variable
+// NEXT_PUBLIC_* vieja en Netlify podía sobrescribirla y provocar el error 400020.
+const SITE_KEY = '0x4AAAAAAEPafX7zzdCsVdYB';
 const SCRIPT_SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
 
 declare global {
@@ -70,6 +71,12 @@ export function TurnstileWidget() {
           sitekey: SITE_KEY,
           appearance: 'interaction-only',
           theme: 'light',
+          // Un fallo del widget no debe romper la página ni llenar la consola de
+          // errores sin capturar; el servidor decide qué hacer sin token.
+          'error-callback': (code: unknown) => {
+            console.warn(`[turnstile] el widget no se pudo cargar (código ${String(code)})`);
+            return true;
+          },
         });
       })
       .catch(() => {
