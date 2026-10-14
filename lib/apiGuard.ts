@@ -164,7 +164,9 @@ export async function guardRequest(request: Request): Promise<GuardResult> {
     if (result.ok) {
       console.log(`[turnstile] válido (hostname: ${result.hostname ?? 'desconocido'})`);
     } else {
-      console.warn(
+      // console.log y no console.warn: Netlify no lista las líneas WARN en sus logs
+      // de funciones, y estos bloqueos tienen que poder verse ahí.
+      console.log(
         `[turnstile] ${enforce && !result.unavailable ? 'BLOQUEADO' : 'modo vigilancia, no se bloquea'}: ${result.reason}`
       );
       if (enforce && !result.unavailable) {
