@@ -1,5 +1,6 @@
 import { escapeHtmlDeep } from './escapeHtml';
 import { getSupabaseServerClient } from './supabaseServer';
+import { sendOpsAlert } from './alerts';
 
 export interface AgencyFormData {
   firstName: string;
@@ -539,7 +540,30 @@ const createConfirmationEmailTemplate = (rawData: AgencyFormData): string => {
   `;
 };
 
+// Todos los correos pasan por aquí: si falla uno, se avisa por el canal de
+// alertas (sin datos personales: solo el tipo de correo y el motivo del error).
 async function sendEmail(
+  apiKey: string,
+  apiUrl: string,
+  to: string,
+  subject: string,
+  htmlBody: string
+): Promise<{ success: boolean; error?: string }> {
+  const result = await sendEmailRaw(apiKey, apiUrl, to, subject, htmlBody);
+  if (!result.success) {
+    const kind = to.toLowerCase().endsWith('@toursred.com')
+      ? 'correo interno para el equipo'
+      : 'confirmación al visitante';
+    await sendOpsAlert(
+      `⚠️ ToursRed (página corporativa): falló un ${kind}. Motivo: ${String(
+        result.error ?? 'desconocido'
+      ).slice(0, 300)}. Los envíos siguen guardados en Supabase: revisa las filas con email_status = 'failed' del esquema corporate.`
+    );
+  }
+  return result;
+}
+
+async function sendEmailRaw(
   apiKey: string,
   apiUrl: string,
   to: string,
