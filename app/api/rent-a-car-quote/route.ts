@@ -51,7 +51,7 @@ export async function POST(request: Request) {
     const validation = validateFormData(body);
     if (!validation.valid) {
       return NextResponse.json(
-        { success: false, error: 'Datos inválidos', errors: validation.errors },
+        { success: false, error: validation.errors.join('. '), errors: validation.errors },
         { status: 400 }
       );
     }

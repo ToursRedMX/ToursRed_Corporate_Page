@@ -1,4 +1,5 @@
 import { escapeHtmlDeep } from './escapeHtml';
+import { getSupabaseServerClient } from './supabaseServer';
 
 export interface AgencyFormData {
   firstName: string;
@@ -135,6 +136,36 @@ interface SMTP2GoEmailPayload {
   sender: string;
   subject: string;
   html_body: string;
+}
+
+// La llave de SMTP2GO se administra en el marketplace (public.email_settings,
+// editable desde su panel de admin). Se lee de ahí para usar siempre la misma
+// llave y evitar copias desactualizadas; la variable de entorno queda de respaldo
+// (por ejemplo en deploy previews, que no tienen la llave de servicio de Supabase).
+const API_KEY_TTL_MS = 5 * 60 * 1000;
+let cachedApiKey: { key: string; at: number } | null = null;
+
+async function getSmtp2GoApiKey(): Promise<string | undefined> {
+  if (cachedApiKey && Date.now() - cachedApiKey.at < API_KEY_TTL_MS) {
+    return cachedApiKey.key;
+  }
+  try {
+    const { data, error } = await getSupabaseServerClient()
+      .from('email_settings')
+      .select('smtp_api_key')
+      .maybeSingle();
+    const key = typeof data?.smtp_api_key === 'string' ? data.smtp_api_key.trim() : '';
+    if (key) {
+      cachedApiKey = { key, at: Date.now() };
+      return key;
+    }
+    if (error) {
+      console.error('[smtp2go] No se pudo leer email_settings:', error.message);
+    }
+  } catch (error) {
+    console.error('[smtp2go] Error leyendo email_settings:', error);
+  }
+  return process.env.SMTP2GO_API_KEY;
 }
 
 const LOGO_URL = 'https://www.toursred.com.mx/logo.png';
@@ -570,7 +601,7 @@ async function sendEmail(
 export async function sendAgencyRegistrationEmail(
   data: AgencyFormData
 ): Promise<{ success: boolean; error?: string }> {
-  const apiKey = process.env.SMTP2GO_API_KEY;
+  const apiKey = await getSmtp2GoApiKey();
   const apiUrl = process.env.SMTP2GO_API_URL;
   const recipientEmail = process.env.AGENCY_REGISTRATION_EMAIL;
 
@@ -897,7 +928,7 @@ const createContactConfirmationEmailTemplate = (rawData: ContactFormData): strin
 export async function sendContactFormEmail(
   data: ContactFormData
 ): Promise<{ success: boolean; error?: string }> {
-  const apiKey = process.env.SMTP2GO_API_KEY;
+  const apiKey = await getSmtp2GoApiKey();
   const apiUrl = process.env.SMTP2GO_API_URL;
   const recipientEmail = 'contacto@toursred.com';
 
@@ -1280,7 +1311,7 @@ const createMegaTravelConfirmationEmailTemplate = (rawData: MegaTravelQuoteData)
 export async function sendMegaTravelQuoteEmail(
   data: MegaTravelQuoteData
 ): Promise<{ success: boolean; error?: string }> {
-  const apiKey = process.env.SMTP2GO_API_KEY;
+  const apiKey = await getSmtp2GoApiKey();
   const apiUrl = process.env.SMTP2GO_API_URL;
   const recipientEmail = 'contacto@toursred.com';
 
@@ -1651,7 +1682,7 @@ const createNefertariTravelConfirmationEmailTemplate = (rawData: NefertariTravel
 export async function sendNefertariTravelQuoteEmail(
   data: NefertariTravelQuoteData
 ): Promise<{ success: boolean; error?: string }> {
-  const apiKey = process.env.SMTP2GO_API_KEY;
+  const apiKey = await getSmtp2GoApiKey();
   const apiUrl = process.env.SMTP2GO_API_URL;
   const recipientEmail = 'contacto@toursred.com';
 
@@ -2022,7 +2053,7 @@ const createExoticcaConfirmationEmailTemplate = (rawData: ExoticcaQuoteData): st
 export async function sendExoticcaQuoteEmail(
   data: ExoticcaQuoteData
 ): Promise<{ success: boolean; error?: string }> {
-  const apiKey = process.env.SMTP2GO_API_KEY;
+  const apiKey = await getSmtp2GoApiKey();
   const apiUrl = process.env.SMTP2GO_API_URL;
   const recipientEmail = 'contacto@toursred.com';
 
@@ -2066,7 +2097,7 @@ export async function sendGenericEmail(params: {
   subject: string;
   html: string;
 }): Promise<{ success: boolean; error?: string }> {
-  const apiKey = process.env.SMTP2GO_API_KEY;
+  const apiKey = await getSmtp2GoApiKey();
   const apiUrl = process.env.SMTP2GO_API_URL;
 
   if (!apiKey || !apiUrl) {
@@ -2448,7 +2479,7 @@ const createTravelInsuranceConfirmationEmailTemplate = (rawData: TravelInsurance
 export async function sendTravelInsuranceQuoteEmail(
   data: TravelInsuranceQuoteData
 ): Promise<{ success: boolean; error?: string }> {
-  const apiKey = process.env.SMTP2GO_API_KEY;
+  const apiKey = await getSmtp2GoApiKey();
   const apiUrl = process.env.SMTP2GO_API_URL;
   const recipientEmail = 'contacto@toursred.com';
 
@@ -2898,7 +2929,7 @@ const createTravelerServicesConfirmationEmailTemplate = (rawData: TravelerServic
 export async function sendTravelerServicesRequestEmail(
   data: TravelerServicesRequestData
 ): Promise<{ success: boolean; error?: string }> {
-  const apiKey = process.env.SMTP2GO_API_KEY;
+  const apiKey = await getSmtp2GoApiKey();
   const apiUrl = process.env.SMTP2GO_API_URL;
   const recipientEmail = 'contacto@toursred.com';
 
@@ -3127,7 +3158,7 @@ function createEsimQuoteConfirmationTemplate(rawData: EsimQuoteData): string {
 export async function sendEsimQuoteEmail(
   data: EsimQuoteData
 ): Promise<{ success: boolean; error?: string }> {
-  const apiKey = process.env.SMTP2GO_API_KEY;
+  const apiKey = await getSmtp2GoApiKey();
   const apiUrl = process.env.SMTP2GO_API_URL;
   const recipientEmail = 'contacto@toursred.com';
 
@@ -3164,7 +3195,7 @@ export async function sendEsimQuoteEmail(
 export async function sendCarRentalQuoteEmail(
   data: CarRentalQuoteData
 ): Promise<{ success: boolean; error?: string }> {
-  const apiKey = process.env.SMTP2GO_API_KEY;
+  const apiKey = await getSmtp2GoApiKey();
   const apiUrl = process.env.SMTP2GO_API_URL;
   const recipientEmail = 'contacto@toursred.com';
 

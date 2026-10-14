@@ -286,6 +286,8 @@ export default function ContactPage() {
                         value={formData.message}
                         onChange={handleChange}
                         required
+                        minLength={10}
+                        maxLength={5000}
                         rows={6}
                         className="mt-2 border-slate-300 focus:border-red-500 focus:ring-red-500 resize-none"
                       />

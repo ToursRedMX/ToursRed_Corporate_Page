@@ -24,7 +24,11 @@ export async function POST(request: Request) {
 
     if (missingFields.length > 0) {
       return NextResponse.json(
-        { error: `Missing required fields: ${missingFields.join(', ')}` },
+        {
+          success: false,
+          error: 'Faltan campos requeridos. Revisa que hayas completado todos los campos obligatorios.',
+          missingFields,
+        },
         { status: 400 }
       );
     }
