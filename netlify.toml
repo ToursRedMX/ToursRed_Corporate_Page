@@ -65,6 +65,13 @@ for = "/robots.txt"
 Content-Type = "text/plain"
 Cache-Control = "public, max-age=3600, must-revalidate"
 
+[[headers]]
+for = "/toursred-bimi.svg"
+
+[headers.values]
+Content-Type = "image/svg+xml; charset=utf-8"
+Cache-Control = "public, max-age=3600"
+
 [[redirects]]
 from = "/es/services/car-rental"
 to = "/es/services/rent-a-car"
