@@ -30,11 +30,11 @@ export default async function SustainabilityPage({
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-green-900/90 via-teal-900/85 to-emerald-900/90"></div>
+          <div className="absolute inset-0 bg-linear-to-br from-green-900/90 via-teal-900/85 to-emerald-900/90"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
-            <div className="p-4 bg-white/20 backdrop-blur-sm rounded-full">
+            <div className="p-4 bg-white/20 backdrop-blur-xs rounded-full">
               <Leaf className="h-16 w-16 text-white" />
             </div>
           </div>
@@ -63,7 +63,7 @@ export default async function SustainabilityPage({
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-emerald-50 to-teal-50">
+      <section className="py-20 bg-linear-to-br from-emerald-50 to-teal-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
@@ -75,7 +75,7 @@ export default async function SustainabilityPage({
             <Card className="border-0 shadow-2xl bg-white hover:shadow-3xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-10 text-center">
                 <div className="flex justify-center mb-6">
-                  <div className="p-5 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl shadow-lg">
+                  <div className="p-5 bg-linear-to-br from-green-500 to-emerald-600 rounded-2xl shadow-lg">
                     <Leaf className="h-12 w-12 text-white" />
                   </div>
                 </div>
@@ -91,7 +91,7 @@ export default async function SustainabilityPage({
             <Card className="border-0 shadow-2xl bg-white hover:shadow-3xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-10 text-center">
                 <div className="flex justify-center mb-6">
-                  <div className="p-5 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl shadow-lg">
+                  <div className="p-5 bg-linear-to-br from-blue-500 to-cyan-600 rounded-2xl shadow-lg">
                     <Users className="h-12 w-12 text-white" />
                   </div>
                 </div>
@@ -107,7 +107,7 @@ export default async function SustainabilityPage({
             <Card className="border-0 shadow-2xl bg-white hover:shadow-3xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-10 text-center">
                 <div className="flex justify-center mb-6">
-                  <div className="p-5 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl shadow-lg">
+                  <div className="p-5 bg-linear-to-br from-amber-500 to-orange-600 rounded-2xl shadow-lg">
                     <TrendingUp className="h-12 w-12 text-white" />
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default async function SustainabilityPage({
               return (
                 <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                   <CardContent className="p-6 flex items-start space-x-4">
-                    <div className="flex-shrink-0">
+                    <div className="shrink-0">
                       <div className={`${colors[index]} rounded-xl p-3`}>
                         <Icon className="h-7 w-7" />
                       </div>
@@ -161,7 +161,7 @@ export default async function SustainabilityPage({
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-slate-50 to-slate-100">
+      <section className="py-20 bg-linear-to-br from-slate-50 to-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-6">
@@ -200,7 +200,7 @@ export default async function SustainabilityPage({
                 return (
                   <Card key={index} className="border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white">
                     <CardContent className="p-6 flex flex-col items-center text-center h-full">
-                      <div className={`bg-gradient-to-br ${colors[index]} rounded-2xl p-4 mb-4`}>
+                      <div className={`bg-linear-to-br ${colors[index]} rounded-2xl p-4 mb-4`}>
                         <Icon className="h-8 w-8 text-white" />
                       </div>
                       <p className="text-slate-700 font-medium leading-relaxed">
@@ -247,9 +247,9 @@ export default async function SustainabilityPage({
                 ];
 
                 return (
-                  <Card key={index} className="border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-slate-50">
+                  <Card key={index} className="border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-linear-to-br from-white to-slate-50">
                     <CardContent className="p-6 flex flex-col items-center text-center h-full">
-                      <div className={`bg-gradient-to-br ${colors[index]} rounded-2xl p-4 mb-4`}>
+                      <div className={`bg-linear-to-br ${colors[index]} rounded-2xl p-4 mb-4`}>
                         <Icon className="h-8 w-8 text-white" />
                       </div>
                       <p className="text-slate-700 font-medium leading-relaxed">
@@ -269,14 +269,14 @@ export default async function SustainabilityPage({
       </section>
 
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-900 via-emerald-900 to-green-900">
+        <div className="absolute inset-0 bg-linear-to-br from-teal-900 via-emerald-900 to-green-900">
           <div className="absolute inset-0 opacity-20">
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')]"></div>
           </div>
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center mb-8">
-            <div className="p-5 bg-white/20 backdrop-blur-sm rounded-2xl">
+            <div className="p-5 bg-white/20 backdrop-blur-xs rounded-2xl">
               <Heart className="h-12 w-12 text-white" />
             </div>
           </div>

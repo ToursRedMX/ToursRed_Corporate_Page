@@ -88,7 +88,7 @@ export default async function CivitatiPage({
   const t = isSpanish ? content.es : content.en;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <nav className="mb-8 text-sm text-gray-600">
           <ol className="flex items-center space-x-2">
@@ -113,7 +113,7 @@ export default async function CivitatiPage({
         </div>
 
         <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12 space-y-6">
+          <div className="bg-white rounded-2xl shadow-xs p-8 md:p-12 space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
               {t.intro.text1}
             </p>
@@ -147,7 +147,7 @@ export default async function CivitatiPage({
         <div className="max-w-4xl mx-auto mb-16">
           <div className="bg-blue-50 border border-blue-200 rounded-2xl p-8 md:p-12">
             <div className="flex items-start gap-3 mb-6">
-              <Info className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+              <Info className="h-6 w-6 text-blue-600 shrink-0 mt-1" />
               <h2 className="text-2xl font-bold text-gray-900">
                 {t.legal.title}
               </h2>
@@ -166,7 +166,7 @@ export default async function CivitatiPage({
         </div>
 
         <div className="max-w-6xl mx-auto mb-12">
-          <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12">
+          <div className="bg-white rounded-2xl shadow-xs p-8 md:p-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
               {isSpanish ? 'Explora actividades' : 'Explore activities'}
             </h2>
@@ -175,7 +175,7 @@ export default async function CivitatiPage({
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-sm p-8 flex justify-center">
+          <div className="bg-white rounded-2xl shadow-xs p-8 flex justify-center">
             <CivitatisAdBanner />
           </div>
         </div>

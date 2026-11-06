@@ -16,7 +16,7 @@ export default async function LegalPage({
   return (
     <>
       <Section background="white" className="pt-20">
-        <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 md:p-12 text-white max-w-4xl mx-auto shadow-xl">
+        <div className="bg-linear-to-br from-slate-800 to-slate-900 rounded-2xl p-8 md:p-12 text-white max-w-4xl mx-auto shadow-xl">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             {dict.legal.hero.title}
           </h1>
@@ -26,7 +26,7 @@ export default async function LegalPage({
 
       <Section background="gray">
         <div className="max-w-4xl mx-auto space-y-8">
-          <div className="bg-white rounded-xl p-8 md:p-12 shadow-sm">
+          <div className="bg-white rounded-xl p-8 md:p-12 shadow-xs">
             <div className="mb-6">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                 <FileText className="h-8 w-8 text-red-600" />

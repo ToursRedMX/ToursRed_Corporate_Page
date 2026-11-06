@@ -55,7 +55,7 @@ const components = {
     />
   ),
   table: (props: any) => (
-    <div className="overflow-x-auto my-6 rounded-lg border border-slate-200 shadow-sm">
+    <div className="overflow-x-auto my-6 rounded-lg border border-slate-200 shadow-xs">
       <table className="w-full text-sm text-left border-collapse" {...props} />
     </div>
   ),

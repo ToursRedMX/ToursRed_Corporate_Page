@@ -319,9 +319,9 @@ export default function JoinAgencyPage() {
 
   return (
     <>
-      <section className="relative py-24 bg-gradient-to-br from-slate-700 via-blue-800 to-teal-700 text-white overflow-hidden">
+      <section className="relative py-24 bg-linear-to-br from-slate-700 via-blue-800 to-teal-700 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-500 animate-pulse"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-teal-500 animate-pulse"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Building2 className="h-20 w-20 mx-auto mb-6 text-white opacity-90" />
@@ -334,7 +334,7 @@ export default function JoinAgencyPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-slate-50 to-gray-100">
+      <section className="py-16 bg-linear-to-br from-slate-50 to-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center text-slate-900 mb-12">
             {dict.benefits.title}
@@ -413,7 +413,7 @@ export default function JoinAgencyPage() {
                 <ul className="space-y-3">
                   {dict.requirements.individual.items.map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 bg-red-600 rounded-full flex items-center justify-center mt-0.5">
+                      <div className="shrink-0 w-5 h-5 bg-red-600 rounded-full flex items-center justify-center mt-0.5">
                         <span className="text-white text-xs font-bold">✓</span>
                       </div>
                       <span className="text-slate-700">{item}</span>
@@ -431,7 +431,7 @@ export default function JoinAgencyPage() {
                 <ul className="space-y-3">
                   {dict.requirements.business.items.map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 bg-red-600 rounded-full flex items-center justify-center mt-0.5">
+                      <div className="shrink-0 w-5 h-5 bg-red-600 rounded-full flex items-center justify-center mt-0.5">
                         <span className="text-white text-xs font-bold">✓</span>
                       </div>
                       <span className="text-slate-700">{item}</span>
@@ -465,9 +465,9 @@ export default function JoinAgencyPage() {
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3">
                     {submitStatus.type === 'success' ? (
-                      <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0" />
+                      <CheckCircle2 className="h-6 w-6 text-green-600 shrink-0" />
                     ) : (
-                      <div className="h-6 w-6 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0">
+                      <div className="h-6 w-6 rounded-full bg-red-600 flex items-center justify-center shrink-0">
                         <span className="text-white text-sm font-bold">!</span>
                       </div>
                     )}

@@ -44,11 +44,11 @@ export function CookieBanner({ lang, dictionary }: CookieBannerProps) {
         isClosing ? 'translate-y-full opacity-0' : 'translate-y-0 opacity-100'
       }`}
     >
-      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-t border-slate-700 shadow-2xl">
+      <div className="bg-linear-to-r from-slate-900 via-slate-800 to-slate-900 border-t border-slate-700 shadow-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div className="flex items-start gap-3 flex-1">
-              <div className="flex-shrink-0 mt-1">
+              <div className="shrink-0 mt-1">
                 <Cookie className="h-6 w-6 text-blue-400" />
               </div>
               <div className="flex-1">

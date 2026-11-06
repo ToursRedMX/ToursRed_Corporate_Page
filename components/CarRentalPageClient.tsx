@@ -63,7 +63,7 @@ export function CarRentalPageClient({ lang, dict }: CarRentalPageClientProps) {
           </ol>
         </nav>
 
-        <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-red-900 rounded-2xl shadow-xl p-6 md:p-10 mb-8 text-white overflow-hidden">
+        <div className="relative bg-linear-to-br from-slate-900 via-slate-800 to-red-900 rounded-2xl shadow-xl p-6 md:p-10 mb-8 text-white overflow-hidden">
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-8 right-8 w-64 h-64 rounded-full border-2 border-white" />
             <div className="absolute bottom-4 right-32 w-32 h-32 rounded-full border border-white" />
@@ -75,7 +75,7 @@ export function CarRentalPageClient({ lang, dict }: CarRentalPageClientProps) {
               {dict.hero.badge}
             </div>
             <div className="flex items-start gap-4 mb-4">
-              <div className="bg-red-600 p-3 rounded-xl flex-shrink-0">
+              <div className="bg-red-600 p-3 rounded-xl shrink-0">
                 <Car className="h-8 w-8 text-white" />
               </div>
               <div>
@@ -95,10 +95,10 @@ export function CarRentalPageClient({ lang, dict }: CarRentalPageClientProps) {
             {steps.map((step, idx) => (
               <div key={idx} className="relative">
                 {idx < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-red-200 to-transparent z-0" />
+                  <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-linear-to-r from-red-200 to-transparent z-0" />
                 )}
                 <div className="relative z-10 flex flex-col items-start gap-3">
-                  <div className="bg-red-50 border border-red-100 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <div className="bg-red-50 border border-red-100 w-16 h-16 rounded-2xl flex items-center justify-center shrink-0">
                     <step.icon className="h-7 w-7 text-red-600" />
                   </div>
                   <span className="text-3xl font-black text-red-100 leading-none">{step.step}</span>
@@ -126,7 +126,7 @@ export function CarRentalPageClient({ lang, dict }: CarRentalPageClientProps) {
               ];
               return (
                 <div key={idx} className="flex gap-4 p-5 rounded-xl border border-slate-100 hover:shadow-md transition-shadow">
-                  <div className={`bg-gradient-to-br ${gradients[idx]} w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0`}>
+                  <div className={`bg-linear-to-br ${gradients[idx]} w-12 h-12 rounded-xl flex items-center justify-center shrink-0`}>
                     <Icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -140,7 +140,7 @@ export function CarRentalPageClient({ lang, dict }: CarRentalPageClientProps) {
         </div>
 
         <div className="bg-white rounded-2xl shadow-md overflow-hidden mb-8">
-          <div className="bg-gradient-to-r from-slate-800 to-slate-900 px-8 py-6">
+          <div className="bg-linear-to-r from-slate-800 to-slate-900 px-8 py-6">
             <h2 className="text-2xl font-bold text-white mb-1">{dict.booking.title}</h2>
             <p className="text-slate-300 text-sm">{dict.booking.subtitle}</p>
           </div>
@@ -173,7 +173,7 @@ export function CarRentalPageClient({ lang, dict }: CarRentalPageClientProps) {
 
           {/* Tip bar */}
           <div className="p-4 bg-amber-50 border-b border-amber-100 flex items-center gap-3">
-            <Lightbulb className="h-5 w-5 text-amber-600 flex-shrink-0" />
+            <Lightbulb className="h-5 w-5 text-amber-600 shrink-0" />
             <p className="text-amber-800 text-sm font-medium">
               {activeProvider === 'bookingcars' ? dict.booking.tipBookingCars : dict.booking.tipAgentCars}
             </p>
@@ -234,7 +234,7 @@ export function CarRentalPageClient({ lang, dict }: CarRentalPageClientProps) {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl shadow-lg p-8 text-white text-center mb-8">
+        <div className="bg-linear-to-r from-red-600 to-red-700 rounded-2xl shadow-lg p-8 text-white text-center mb-8">
           <h2 className="text-2xl font-bold mb-3">{dict.cta.title}</h2>
           <p className="text-red-100 mb-6 max-w-2xl mx-auto">{dict.cta.subtitle}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

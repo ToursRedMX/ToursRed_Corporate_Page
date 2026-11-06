@@ -28,7 +28,7 @@ export default async function CareersPage({ params }: { params: Promise<{ lang: 
 
   return (
     <div className="min-h-screen">
-      <Section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+      <Section className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         <div className="text-center max-w-4xl mx-auto">
           <div className="flex justify-center mb-6">
             <Briefcase className="h-16 w-16 text-teal-400" />
@@ -76,7 +76,7 @@ export default async function CareersPage({ params }: { params: Promise<{ lang: 
                     <ul className="space-y-2">
                       {t.positions.accountant.responsibilities.items.map((item: string, index: number) => (
                         <li key={index} className="flex items-start gap-2">
-                          <CheckCircle2 className="h-5 w-5 text-teal-600 mt-0.5 flex-shrink-0" />
+                          <CheckCircle2 className="h-5 w-5 text-teal-600 mt-0.5 shrink-0" />
                           <span className="text-gray-700">{item}</span>
                         </li>
                       ))}
@@ -90,7 +90,7 @@ export default async function CareersPage({ params }: { params: Promise<{ lang: 
                     <ul className="space-y-2">
                       {t.positions.accountant.requirements.items.map((item: string, index: number) => (
                         <li key={index} className="flex items-start gap-2">
-                          <CheckCircle2 className="h-5 w-5 text-teal-600 mt-0.5 flex-shrink-0" />
+                          <CheckCircle2 className="h-5 w-5 text-teal-600 mt-0.5 shrink-0" />
                           <span className="text-gray-700">{item}</span>
                         </li>
                       ))}
@@ -120,7 +120,7 @@ export default async function CareersPage({ params }: { params: Promise<{ lang: 
                     <ul className="space-y-2">
                       {t.positions.communityManager.responsibilities.items.map((item: string, index: number) => (
                         <li key={index} className="flex items-start gap-2">
-                          <CheckCircle2 className="h-5 w-5 text-teal-600 mt-0.5 flex-shrink-0" />
+                          <CheckCircle2 className="h-5 w-5 text-teal-600 mt-0.5 shrink-0" />
                           <span className="text-gray-700">{item}</span>
                         </li>
                       ))}
@@ -134,7 +134,7 @@ export default async function CareersPage({ params }: { params: Promise<{ lang: 
                     <ul className="space-y-2">
                       {t.positions.communityManager.requirements.items.map((item: string, index: number) => (
                         <li key={index} className="flex items-start gap-2">
-                          <CheckCircle2 className="h-5 w-5 text-teal-600 mt-0.5 flex-shrink-0" />
+                          <CheckCircle2 className="h-5 w-5 text-teal-600 mt-0.5 shrink-0" />
                           <span className="text-gray-700">{item}</span>
                         </li>
                       ))}
@@ -145,7 +145,7 @@ export default async function CareersPage({ params }: { params: Promise<{ lang: 
             </div>
           </div>
 
-          <Card className="bg-gradient-to-br from-teal-50 to-blue-50 border-2 border-teal-200 mb-12">
+          <Card className="bg-linear-to-br from-teal-50 to-blue-50 border-2 border-teal-200 mb-12">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-2">
                 <Mail className="h-6 w-6 text-teal-600" />
@@ -172,7 +172,7 @@ export default async function CareersPage({ params }: { params: Promise<{ lang: 
           <Card className="bg-yellow-50 border-2 border-yellow-200">
             <CardContent className="pt-6">
               <div className="flex items-start gap-3">
-                <AlertCircle className="h-6 w-6 text-yellow-600 mt-0.5 flex-shrink-0" />
+                <AlertCircle className="h-6 w-6 text-yellow-600 mt-0.5 shrink-0" />
                 <p className="text-sm text-gray-700 leading-relaxed">
                   {t.legalNotice.text}
                 </p>

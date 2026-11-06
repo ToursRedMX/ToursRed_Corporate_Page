@@ -16,9 +16,9 @@ export default async function HowItWorksPage({
 
   return (
     <>
-      <section className="relative py-24 bg-gradient-to-br from-slate-800 via-slate-700 to-teal-800 text-white overflow-hidden">
+      <section className="relative py-24 bg-linear-to-br from-slate-800 via-slate-700 to-teal-800 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-500 animate-pulse"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-teal-500 to-blue-500 animate-pulse"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -93,12 +93,12 @@ export default async function HowItWorksPage({
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-amber-50 to-orange-50">
+      <section className="py-16 bg-linear-to-r from-amber-50 to-orange-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="border-2 border-amber-300 bg-white shadow-xl">
             <CardContent className="p-8">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <AlertCircle className="h-8 w-8 text-amber-600" />
                 </div>
                 <div>
@@ -192,7 +192,7 @@ export default async function HowItWorksPage({
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-800/70 to-teal-900/80"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-slate-900/80 via-slate-800/70 to-teal-900/80"></div>
             </div>
             <div className="relative z-10 py-16 px-8 text-center text-white">
               <h3 className="text-3xl md:text-4xl font-bold mb-4">
@@ -206,7 +206,7 @@ export default async function HowItWorksPage({
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 text-white">
+      <section className="py-20 bg-linear-to-br from-slate-900 via-slate-800 to-teal-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -220,7 +220,7 @@ export default async function HowItWorksPage({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div className="text-center">
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg border-2 border-white/30">
+                <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-xs flex items-center justify-center shadow-lg border-2 border-white/30">
                   <span className="text-3xl font-bold text-white">1</span>
                 </div>
               </div>
@@ -234,7 +234,7 @@ export default async function HowItWorksPage({
 
             <div className="text-center">
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg border-2 border-white/30">
+                <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-xs flex items-center justify-center shadow-lg border-2 border-white/30">
                   <span className="text-3xl font-bold text-white">2</span>
                 </div>
               </div>
@@ -248,7 +248,7 @@ export default async function HowItWorksPage({
 
             <div className="text-center">
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg border-2 border-white/30">
+                <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-xs flex items-center justify-center shadow-lg border-2 border-white/30">
                   <span className="text-3xl font-bold text-white">3</span>
                 </div>
               </div>
@@ -262,7 +262,7 @@ export default async function HowItWorksPage({
 
             <div className="text-center">
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg border-2 border-white/30">
+                <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-xs flex items-center justify-center shadow-lg border-2 border-white/30">
                   <span className="text-3xl font-bold text-white">4</span>
                 </div>
               </div>
