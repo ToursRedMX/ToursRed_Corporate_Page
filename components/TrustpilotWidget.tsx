@@ -34,15 +34,17 @@ export function TrustpilotWidget({ lang }: { lang: string }) {
         onLoad={init}
       />
       {/* TrustBox widget - Review Collector (iframe has a white background) */}
-      <div className="rounded-lg bg-white px-3 py-2 w-full min-w-[240px]">
+      {/* The iframe needs ~300px to avoid inner scrollbars; scale it down to fit the 240px column */}
+      <div className="h-[42px] w-[240px] max-w-full overflow-hidden rounded-lg bg-white">
         <div
           ref={ref}
-          className="trustpilot-widget"
+          className="trustpilot-widget origin-top-left scale-[0.8]"
+          style={{ width: 300, height: 52 }}
           data-locale={isEn ? 'en-US' : 'es-ES'}
           data-template-id="56278e9abfbba0bdcd568bc"
           data-businessunit-id="6aed35be828001f8780e30ba"
           data-style-height="52px"
-          data-style-width="100%"
+          data-style-width="300px"
         >
           <a href={REVIEW_URL} target="_blank" rel="noopener noreferrer">
             Trustpilot
