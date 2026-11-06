@@ -86,9 +86,6 @@ export function Footer({ lang, dictionary }: FooterProps) {
                 </a>
               </div>
             </div>
-            <div className="mt-6">
-              <TrustpilotWidget locale={lang === 'en' ? 'en-US' : 'es-ES'} />
-            </div>
           </div>
 
           <div>
@@ -198,6 +195,9 @@ export function Footer({ lang, dictionary }: FooterProps) {
                 </Link>
               </li>
             </ul>
+            <div className="mt-6">
+              <TrustpilotWidget lang={lang} />
+            </div>
           </div>
         </div>
 
