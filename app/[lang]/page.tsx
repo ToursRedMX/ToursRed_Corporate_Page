@@ -36,7 +36,7 @@ export default async function HomePage({
               className="h-48 md:h-64 lg:h-72 w-auto object-contain drop-shadow-2xl"
             />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight md:leading-none">
             {dict.home.hero.title}
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto">

@@ -161,6 +161,18 @@ html {
   }
 }
 
+/* Tailwind v4 compat: keep v3 behavior for button cursor and placeholder color */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-gray-400);
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

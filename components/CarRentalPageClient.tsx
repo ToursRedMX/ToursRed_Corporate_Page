@@ -79,7 +79,7 @@ export function CarRentalPageClient({ lang, dict }: CarRentalPageClientProps) {
                 <Car className="h-8 w-8 text-white" />
               </div>
               <div>
-                <h1 className="text-3xl md:text-4xl font-bold leading-tight">{dict.hero.title}</h1>
+                <h1 className="text-3xl md:text-4xl font-bold leading-tight md:leading-10">{dict.hero.title}</h1>
               </div>
             </div>
             <p className="text-slate-200 text-lg leading-relaxed max-w-3xl">
