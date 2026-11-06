@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { SiFacebook, SiInstagram, SiTiktok } from '@icons-pack/react-simple-icons';
 import { Locale } from '@/lib/i18n/config';
+import { TrustpilotWidget } from '@/components/TrustpilotWidget';
 import LinkedInIcon from '@/src/assets/icons/InBug-White.png';
 
 interface FooterProps {
@@ -84,6 +85,9 @@ export function Footer({ lang, dictionary }: FooterProps) {
                   </svg>
                 </a>
               </div>
+            </div>
+            <div className="mt-6">
+              <TrustpilotWidget locale={lang === 'en' ? 'en-US' : 'es-ES'} />
             </div>
           </div>
 
