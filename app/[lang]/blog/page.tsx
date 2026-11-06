@@ -18,9 +18,9 @@ export default async function BlogPage({
 
   return (
     <>
-      <section className="relative py-24 bg-gradient-to-br from-slate-800 via-slate-700 to-blue-900 text-white overflow-hidden">
+      <section className="relative py-24 bg-linear-to-br from-slate-800 via-slate-700 to-blue-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-500 animate-pulse"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-teal-500 animate-pulse"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">

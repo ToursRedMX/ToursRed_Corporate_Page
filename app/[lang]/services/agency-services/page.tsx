@@ -73,7 +73,7 @@ export default async function AgencyServicesPage({
 
   return (
     <div className="min-h-screen bg-white">
-      <Section className="bg-gradient-to-br from-red-600 to-red-800 text-white pt-32 pb-20">
+      <Section className="bg-linear-to-br from-red-600 to-red-800 text-white pt-32 pb-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">
             {(lang as Locale) === 'es' ? 'Servicios de Apoyo para Agencias' : 'Agency Support Services'}
@@ -86,7 +86,7 @@ export default async function AgencyServicesPage({
         </div>
       </Section>
 
-      <Section className="bg-gradient-to-b from-white to-red-50">
+      <Section className="bg-linear-to-b from-white to-red-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
@@ -102,7 +102,7 @@ export default async function AgencyServicesPage({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {services.map((service, idx) => (
               <div key={idx} className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative p-8">
                   <div className="text-4xl mb-4">{service.icon}</div>
                   <h3 className="text-xl font-bold text-slate-900 mb-3">
@@ -114,7 +114,7 @@ export default async function AgencyServicesPage({
                   <ul className="space-y-2 text-sm">
                     {service.points.map((point, pidx) => (
                       <li key={pidx} className="flex items-start space-x-2">
-                        <CheckCircle className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
                         <span className="text-slate-700">{point}</span>
                       </li>
                     ))}
@@ -131,9 +131,9 @@ export default async function AgencyServicesPage({
             ))}
           </div>
 
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-8 mb-12">
+          <div className="bg-linear-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-8 mb-12">
             <div className="flex items-start space-x-4">
-              <Sparkles className="h-6 w-6 text-amber-600 flex-shrink-0 mt-1" />
+              <Sparkles className="h-6 w-6 text-amber-600 shrink-0 mt-1" />
               <div>
                 <h4 className="font-bold text-slate-900 mb-2">
                   {(lang as Locale) === 'es' ? 'Nota importante' : 'Important note'}
@@ -149,14 +149,14 @@ export default async function AgencyServicesPage({
         </div>
       </Section>
 
-      <Section className="bg-gradient-to-br from-red-600 via-red-500 to-red-700 text-white py-20">
+      <Section className="bg-linear-to-br from-red-600 via-red-500 to-red-700 text-white py-20">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48"></div>
           <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/10 rounded-full -ml-36 -mb-36"></div>
         </div>
 
         <div className="relative max-w-4xl mx-auto text-center px-4">
-          <div className="inline-flex items-center justify-center space-x-2 bg-white/20 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
+          <div className="inline-flex items-center justify-center space-x-2 bg-white/20 rounded-full px-4 py-2 mb-6 backdrop-blur-xs">
             <Sparkles className="h-4 w-4" />
             <span className="text-sm font-semibold">
               {(lang as Locale) === 'es' ? 'Solicitud personalizada' : 'Personalized request'}

@@ -89,11 +89,11 @@ export function EsimPageClient({ lang, dict }: EsimPageClientProps) {
             alt="Travel eSIM"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-sky-900/90 via-blue-900/85 to-cyan-900/90"></div>
+          <div className="absolute inset-0 bg-linear-to-br from-sky-900/90 via-blue-900/85 to-cyan-900/90"></div>
         </div>
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
-            <div className="p-4 bg-white/20 backdrop-blur-sm rounded-full">
+            <div className="p-4 bg-white/20 backdrop-blur-xs rounded-full">
               <Wifi className="h-16 w-16 text-white" />
             </div>
           </div>
@@ -117,7 +117,7 @@ export function EsimPageClient({ lang, dict }: EsimPageClientProps) {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gradient-to-br from-sky-50 to-blue-50">
+      <section className="py-20 bg-linear-to-br from-sky-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {benefits.map((benefit, index) => {
@@ -125,7 +125,7 @@ export function EsimPageClient({ lang, dict }: EsimPageClientProps) {
               return (
                 <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white">
                   <CardContent className="p-8 flex flex-col items-center text-center">
-                    <div className={`bg-gradient-to-br ${colors[index]} rounded-2xl p-5 mb-6`}>
+                    <div className={`bg-linear-to-br ${colors[index]} rounded-2xl p-5 mb-6`}>
                       <Icon className="h-10 w-10 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-3">
@@ -177,7 +177,7 @@ export function EsimPageClient({ lang, dict }: EsimPageClientProps) {
           </div>
 
           {/* CTA cotización */}
-          <div className="mt-12 bg-gradient-to-br from-sky-600 to-cyan-700 rounded-2xl p-8 text-center text-white shadow-xl">
+          <div className="mt-12 bg-linear-to-br from-sky-600 to-cyan-700 rounded-2xl p-8 text-center text-white shadow-xl">
             <MessageSquare className="h-10 w-10 mx-auto mb-4 opacity-90" />
             <h3 className="text-2xl font-bold mb-2">¿No sabes cuál elegir?</h3>
             <p className="text-sky-100 mb-6 max-w-xl mx-auto">
@@ -202,7 +202,7 @@ export function EsimPageClient({ lang, dict }: EsimPageClientProps) {
       />
 
       {/* How To Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 to-slate-100">
+      <section className="py-20 bg-linear-to-br from-slate-50 to-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
@@ -240,7 +240,7 @@ export function EsimPageClient({ lang, dict }: EsimPageClientProps) {
       {/* Compatibility Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-sky-600 to-blue-700 rounded-2xl p-10 text-center text-white shadow-xl">
+          <div className="bg-linear-to-br from-sky-600 to-blue-700 rounded-2xl p-10 text-center text-white shadow-xl">
             <Smartphone className="h-14 w-14 mx-auto mb-6 opacity-90" />
             <h2 className="text-3xl font-bold mb-4">{d.compatible.title}</h2>
             <p className="text-sky-100 leading-relaxed text-lg">

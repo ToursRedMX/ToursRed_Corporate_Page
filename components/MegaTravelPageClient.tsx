@@ -154,15 +154,15 @@ export function MegaTravelPageClient({ lang, dict }: MegaTravelPageClientProps) 
           </ol>
         </nav>
 
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg shadow-lg p-6 md:p-8 mb-8 text-white">
+        <div className="bg-linear-to-r from-blue-600 to-blue-800 rounded-lg shadow-lg p-6 md:p-8 mb-8 text-white">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">{dict.hero.title}</h1>
           <p className="text-lg mb-6 text-blue-100">
             {dict.hero.subtitle}
           </p>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-4 border border-white/20">
+          <div className="bg-white/10 backdrop-blur-xs rounded-lg p-4 mb-4 border border-white/20">
             <div className="flex items-start space-x-3">
-              <Info className="h-6 w-6 flex-shrink-0 mt-0.5" />
+              <Info className="h-6 w-6 shrink-0 mt-0.5" />
               <div>
                 <p className="font-semibold mb-2">{dict.howItWorks.title}</p>
                 <p className="text-sm text-blue-100">
@@ -173,7 +173,7 @@ export function MegaTravelPageClient({ lang, dict }: MegaTravelPageClientProps) 
           </div>
 
           <div className="bg-amber-500 text-slate-900 rounded-lg p-4 flex items-start space-x-3">
-            <AlertCircle className="h-6 w-6 flex-shrink-0 mt-0.5" />
+            <AlertCircle className="h-6 w-6 shrink-0 mt-0.5" />
             <p className="text-sm font-medium">
               {dict.warning.message}
             </p>

@@ -84,11 +84,11 @@ export function TravelInsurancePageClient({ lang, dict }: TravelInsurancePageCli
             alt="Travel Insurance"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-red-900/90 via-red-800/85 to-pink-900/90"></div>
+          <div className="absolute inset-0 bg-linear-to-br from-red-900/90 via-red-800/85 to-pink-900/90"></div>
         </div>
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
-            <div className="p-4 bg-white/20 backdrop-blur-sm rounded-full">
+            <div className="p-4 bg-white/20 backdrop-blur-xs rounded-full">
               <Shield className="h-16 w-16 text-white" />
             </div>
           </div>
@@ -117,7 +117,7 @@ export function TravelInsurancePageClient({ lang, dict }: TravelInsurancePageCli
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gradient-to-br from-red-50 to-pink-50">
+      <section className="py-20 bg-linear-to-br from-red-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
@@ -131,7 +131,7 @@ export function TravelInsurancePageClient({ lang, dict }: TravelInsurancePageCli
               return (
                 <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white">
                   <CardContent className="p-8 flex flex-col items-center text-center">
-                    <div className={`bg-gradient-to-br ${colors[index]} rounded-2xl p-5 mb-6`}>
+                    <div className={`bg-linear-to-br ${colors[index]} rounded-2xl p-5 mb-6`}>
                       <Icon className="h-10 w-10 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-3">
@@ -160,7 +160,7 @@ export function TravelInsurancePageClient({ lang, dict }: TravelInsurancePageCli
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {processSteps.map((step, index) => (
               <div key={index} className="relative">
-                <Card className="border-0 shadow-lg bg-gradient-to-br from-white to-slate-50">
+                <Card className="border-0 shadow-lg bg-linear-to-br from-white to-slate-50">
                   <CardContent className="p-8">
                     <div className="flex items-center justify-between mb-6">
                       <div className="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center text-xl font-bold">
@@ -185,7 +185,7 @@ export function TravelInsurancePageClient({ lang, dict }: TravelInsurancePageCli
       </section>
 
       {/* Partners Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 to-slate-100">
+      <section className="py-20 bg-linear-to-br from-slate-50 to-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
@@ -222,7 +222,7 @@ export function TravelInsurancePageClient({ lang, dict }: TravelInsurancePageCli
                     onClick={() => setIsIframeModalOpen(true)}
                     className="relative flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow h-32 cursor-pointer hover:scale-105 transform transition-transform"
                   >
-                    <div className="absolute top-2 right-2 bg-gradient-to-r from-red-500 to-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse z-10">
+                    <div className="absolute top-2 right-2 bg-linear-to-r from-red-500 to-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse z-10">
                       Cotiza Aquí
                     </div>
                     <img
@@ -253,7 +253,7 @@ export function TravelInsurancePageClient({ lang, dict }: TravelInsurancePageCli
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-red-600 to-red-800">
+      <section className="py-20 bg-linear-to-br from-red-600 to-red-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             {dict.services.travelInsurance.cta.title}

@@ -25,7 +25,7 @@ export default async function HomePage({
             backgroundPosition: 'center',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-800/85 to-teal-900/80"></div>
+          <div className="absolute inset-0 bg-linear-to-br from-slate-900/90 via-slate-800/85 to-teal-900/80"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
@@ -36,7 +36,7 @@ export default async function HomePage({
               className="h-48 md:h-64 lg:h-72 w-auto object-contain drop-shadow-2xl"
             />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight md:leading-none">
             {dict.home.hero.title}
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto">
@@ -55,7 +55,7 @@ export default async function HomePage({
             <Button
               asChild
               size="lg"
-              className="bg-white/90 backdrop-blur-sm text-slate-900 hover:bg-white border-2 border-white text-lg px-10 py-6 rounded-full shadow-xl transition-all font-semibold"
+              className="bg-white/90 backdrop-blur-xs text-slate-900 hover:bg-white border-2 border-white text-lg px-10 py-6 rounded-full shadow-xl transition-all font-semibold"
             >
               <Link href={`/${lang}/join-agency`}>
                 {dict.home.hero.ctaSecondary}
@@ -160,7 +160,7 @@ export default async function HomePage({
                   { icon: CheckCircle2, text: dict.home.forTravelers.benefit4 },
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">
+                    <div className="shrink-0">
                       <div className="p-2 bg-teal-100 rounded-lg">
                         <benefit.icon className="h-6 w-6 text-teal-600" />
                       </div>
@@ -174,7 +174,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 text-white">
+      <section className="py-20 bg-linear-to-br from-slate-900 via-slate-800 to-teal-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -194,9 +194,9 @@ export default async function HomePage({
                 ].map((benefit, index) => (
                   <div
                     key={index}
-                    className="flex items-center space-x-4 p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-all"
+                    className="flex items-center space-x-4 p-4 bg-white/10 rounded-xl backdrop-blur-xs hover:bg-white/20 transition-all"
                   >
-                    <div className="flex-shrink-0">
+                    <div className="shrink-0">
                       <benefit.icon className="h-6 w-6 text-teal-400" />
                     </div>
                     <p className="text-white text-lg">{benefit.text}</p>
@@ -251,7 +251,7 @@ export default async function HomePage({
               <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-shadow bg-gray-50">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 p-3 bg-red-100 rounded-lg mt-0.5">
+                    <div className="shrink-0 p-3 bg-red-100 rounded-lg mt-0.5">
                       <entry.icon className="h-6 w-6 text-red-600" />
                     </div>
                     <div>
@@ -266,7 +266,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-r from-slate-900 to-slate-800 text-white">
+      <section className="py-24 bg-linear-to-r from-slate-900 to-slate-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
             {dict.home.cta.title}
@@ -284,7 +284,7 @@ export default async function HomePage({
             <Button
               asChild
               size="lg"
-              className="bg-white/90 backdrop-blur-sm text-slate-900 hover:bg-white border-2 border-white text-lg px-10 py-6 rounded-full font-semibold"
+              className="bg-white/90 backdrop-blur-xs text-slate-900 hover:bg-white border-2 border-white text-lg px-10 py-6 rounded-full font-semibold"
             >
               <Link href={`/${lang}/join-agency`}>
                 {dict.home.cta.ctaSecondary}

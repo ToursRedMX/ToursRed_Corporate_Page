@@ -41,7 +41,7 @@ export default function GraciasPage() {
   }, [lang, router]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-slate-100 flex items-center justify-center px-4">
       <div className="max-w-lg w-full text-center">
         <div className="mb-8 flex justify-center">
           <div className="relative">

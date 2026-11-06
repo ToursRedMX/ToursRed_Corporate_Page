@@ -243,7 +243,7 @@ export function AgencySupportPageClient({ lang }: AgencySupportPageClientProps) 
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-white">
-          <DialogHeader className="bg-gradient-to-r from-red-600 to-red-700 text-white -mx-6 -mt-6 px-6 py-6 rounded-t-lg">
+          <DialogHeader className="bg-linear-to-r from-red-600 to-red-700 text-white -mx-6 -mt-6 px-6 py-6 rounded-t-lg">
             <DialogTitle className="text-3xl font-bold text-white">{t.dialogTitle}</DialogTitle>
             <p className="text-red-50 text-sm mt-2">
               {lang === 'es'
@@ -482,7 +482,7 @@ export function AgencySupportPageClient({ lang }: AgencySupportPageClientProps) 
               <Button
                 type="submit"
                 disabled={isLoading || !acceptContact || !acceptPrivacy}
-                className="flex-1 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-lg font-bold text-base py-6 shadow-lg hover:shadow-xl transition-all"
+                className="flex-1 bg-linear-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-lg font-bold text-base py-6 shadow-lg hover:shadow-xl transition-all"
               >
                 {isLoading ? t.submitting : t.submit}
               </Button>

@@ -20,9 +20,9 @@ export default async function OtherAgenciesPage({
 
   return (
     <div className="min-h-screen bg-white">
-      <Section className="bg-gradient-to-br from-red-600 to-red-800 text-white pt-32 pb-20">
+      <Section className="bg-linear-to-br from-red-600 to-red-800 text-white pt-32 pb-20">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center space-x-2 bg-white/20 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
+          <div className="inline-flex items-center justify-center space-x-2 bg-white/20 rounded-full px-4 py-2 mb-6 backdrop-blur-xs">
             <Sparkles className="h-4 w-4" />
             <span className="text-sm font-semibold">
               {(lang as Locale) === 'es' ? 'Próximamente' : 'Coming Soon'}
@@ -49,7 +49,7 @@ export default async function OtherAgenciesPage({
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-red-50 to-orange-50 border border-red-200 rounded-2xl p-8">
+          <div className="bg-linear-to-br from-red-50 to-orange-50 border border-red-200 rounded-2xl p-8">
             <p className="text-slate-700 leading-relaxed">
               {(lang as Locale) === 'es'
                 ? 'Sin embargo, nuestro roadmap contempla que en una siguiente fase también podrán integrarse agencias que operen viajes internacionales de forma directa, es decir que no son operados a través de Mayoristas, dentro de la plataforma.'
@@ -59,7 +59,7 @@ export default async function OtherAgenciesPage({
         </div>
       </Section>
 
-      <Section className="bg-gradient-to-b from-white to-slate-50 py-16">
+      <Section className="bg-linear-to-b from-white to-slate-50 py-16">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
@@ -88,7 +88,7 @@ export default async function OtherAgenciesPage({
             <div className="text-center">
               <Link
                 href={`/${lang}/join-agency`}
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-red-600 to-red-700 rounded-full hover:from-red-700 hover:to-red-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-linear-to-r from-red-600 to-red-700 rounded-full hover:from-red-700 hover:to-red-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 {(lang as Locale) === 'es' ? 'Quiero Ser Agencia Aliada' : 'I Want to Be an Allied Agency'}
               </Link>
@@ -123,7 +123,7 @@ export default async function OtherAgenciesPage({
             <div className="text-center">
               <Link
                 href={`/${lang}/contact`}
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-green-600 to-green-700 rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-linear-to-r from-green-600 to-green-700 rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 {(lang as Locale) === 'es' ? 'Contáctanos' : 'Contact Us'}
               </Link>
@@ -149,7 +149,7 @@ export default async function OtherAgenciesPage({
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-gradient-to-br from-red-600 to-red-700 text-white rounded-2xl shadow-xl p-8">
+            <div className="bg-linear-to-br from-red-600 to-red-700 text-white rounded-2xl shadow-xl p-8">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-white/20 rounded-full">
                   <span className="text-xl font-bold">1</span>
@@ -165,7 +165,7 @@ export default async function OtherAgenciesPage({
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-2xl shadow-xl p-8">
+            <div className="bg-linear-to-br from-blue-600 to-blue-700 text-white rounded-2xl shadow-xl p-8">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-white/20 rounded-full">
                   <span className="text-xl font-bold">2</span>
@@ -192,11 +192,11 @@ export default async function OtherAgenciesPage({
         </div>
       </Section>
 
-      <Section className="bg-gradient-to-b from-amber-50 to-orange-50 py-12">
+      <Section className="bg-linear-to-b from-amber-50 to-orange-50 py-12">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white border-2 border-amber-300 rounded-2xl p-8">
             <div className="flex items-start space-x-4">
-              <AlertCircle className="h-8 w-8 text-amber-600 flex-shrink-0 mt-1" />
+              <AlertCircle className="h-8 w-8 text-amber-600 shrink-0 mt-1" />
               <div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-3">
                   {(lang as Locale) === 'es' ? 'Aviso importante' : 'Important notice'}
@@ -208,7 +208,7 @@ export default async function OtherAgenciesPage({
                 </p>
                 <ul className="space-y-2 text-slate-700">
                   <li className="flex items-start space-x-2">
-                    <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
                     <span>
                       {(lang as Locale) === 'es'
                         ? 'Las experiencias publicadas son operadas directamente por cada agencia aliada.'
@@ -216,7 +216,7 @@ export default async function OtherAgenciesPage({
                     </span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
                     <span>
                       {(lang as Locale) === 'es'
                         ? 'ToursRed no actúa como operador turístico.'
@@ -230,14 +230,14 @@ export default async function OtherAgenciesPage({
         </div>
       </Section>
 
-      <Section className="bg-gradient-to-br from-red-600 via-red-500 to-red-700 text-white py-16">
+      <Section className="bg-linear-to-br from-red-600 via-red-500 to-red-700 text-white py-16">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48"></div>
           <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/10 rounded-full -ml-36 -mb-36"></div>
         </div>
 
         <div className="relative max-w-4xl mx-auto text-center px-4">
-          <div className="inline-flex items-center justify-center space-x-2 bg-white/20 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
+          <div className="inline-flex items-center justify-center space-x-2 bg-white/20 rounded-full px-4 py-2 mb-6 backdrop-blur-xs">
             <Sparkles className="h-4 w-4" />
             <span className="text-sm font-semibold">
               {(lang as Locale) === 'es' ? 'Únete a ToursRed' : 'Join ToursRed'}

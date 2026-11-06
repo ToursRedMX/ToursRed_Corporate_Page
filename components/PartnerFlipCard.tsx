@@ -70,7 +70,7 @@ export function PartnerFlipCard({
         <div className="absolute inset-0 backface-hidden">
           <div className="relative flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow h-full">
             {badgeText && (
-              <div className="absolute top-2 right-2 bg-gradient-to-r from-red-500 to-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg animate-pulse">
+              <div className="absolute top-2 right-2 bg-linear-to-r from-red-500 to-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg animate-pulse">
                 {badgeText}
               </div>
             )}
@@ -83,7 +83,7 @@ export function PartnerFlipCard({
         </div>
 
         <div className="absolute inset-0 backface-hidden rotate-y-180">
-          <div className="flex flex-col items-center justify-center p-6 bg-gradient-to-br from-red-500 to-orange-600 rounded-lg shadow-lg h-full text-white">
+          <div className="flex flex-col items-center justify-center p-6 bg-linear-to-br from-red-500 to-orange-600 rounded-lg shadow-lg h-full text-white">
             <div className="text-center space-y-3">
               <p className="text-xs font-semibold uppercase tracking-wide opacity-90">
                 Código de Descuento

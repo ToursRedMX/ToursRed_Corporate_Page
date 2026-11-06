@@ -44,7 +44,7 @@ export default function NatureStayHubSection({
               className="object-cover"
             />
           </div>
-          <CardContent className="p-8 lg:p-10 bg-gradient-to-br from-teal-600 to-teal-700 text-white flex flex-col">
+          <CardContent className="p-8 lg:p-10 bg-linear-to-br from-teal-600 to-teal-700 text-white flex flex-col">
             <h3 className="text-3xl font-bold mb-4">{name}</h3>
             <p className="text-teal-100 leading-relaxed mb-6">{description}</p>
             <div className="flex flex-wrap gap-2 mb-6">

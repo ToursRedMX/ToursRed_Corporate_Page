@@ -84,15 +84,15 @@ export function NefertariTravelPageClient({ lang, dict }: NefertariTravelPageCli
           </ol>
         </nav>
 
-        <div className="bg-gradient-to-r from-purple-600 to-purple-800 rounded-lg shadow-lg p-6 md:p-8 mb-8 text-white">
+        <div className="bg-linear-to-r from-purple-600 to-purple-800 rounded-lg shadow-lg p-6 md:p-8 mb-8 text-white">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">{dict.hero.title}</h1>
           <p className="text-lg mb-6 text-purple-100">
             {dict.hero.subtitle}
           </p>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-4 border border-white/20">
+          <div className="bg-white/10 backdrop-blur-xs rounded-lg p-4 mb-4 border border-white/20">
             <div className="flex items-start space-x-3">
-              <Info className="h-6 w-6 flex-shrink-0 mt-0.5" />
+              <Info className="h-6 w-6 shrink-0 mt-0.5" />
               <div>
                 <p className="font-semibold mb-2">{dict.howItWorks.title}</p>
                 <p className="text-sm text-purple-100">
@@ -103,7 +103,7 @@ export function NefertariTravelPageClient({ lang, dict }: NefertariTravelPageCli
           </div>
 
           <div className="bg-amber-500 text-slate-900 rounded-lg p-4 flex items-start space-x-3">
-            <AlertCircle className="h-6 w-6 flex-shrink-0 mt-0.5" />
+            <AlertCircle className="h-6 w-6 shrink-0 mt-0.5" />
             <p className="text-sm font-medium">
               {dict.warning.message}
             </p>
@@ -113,7 +113,7 @@ export function NefertariTravelPageClient({ lang, dict }: NefertariTravelPageCli
         <div className="flex justify-center mb-6 gap-3 flex-wrap">
           <button
             onClick={() => handleSwitchView('internacional')}
-            className={`inline-flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-colors shadow-sm border-2 ${
+            className={`inline-flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-colors shadow-xs border-2 ${
               activeView === 'internacional'
                 ? 'bg-amber-500 border-amber-500 text-white hover:bg-amber-600 hover:border-amber-600'
                 : 'bg-white border-amber-500 text-amber-600 hover:bg-amber-50'
@@ -124,7 +124,7 @@ export function NefertariTravelPageClient({ lang, dict }: NefertariTravelPageCli
           </button>
           <button
             onClick={() => handleSwitchView('nacional')}
-            className={`inline-flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-colors shadow-sm border-2 ${
+            className={`inline-flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-colors shadow-xs border-2 ${
               activeView === 'nacional'
                 ? 'bg-amber-500 border-amber-500 text-white hover:bg-amber-600 hover:border-amber-600'
                 : 'bg-white border-amber-500 text-amber-600 hover:bg-amber-50'

@@ -28,9 +28,9 @@ export default async function AboutPage({
 
   return (
     <>
-      <section className="relative py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 text-white overflow-hidden">
+      <section className="relative py-24 bg-linear-to-br from-slate-900 via-slate-800 to-teal-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-500 animate-pulse"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-teal-500 to-blue-500 animate-pulse"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -56,7 +56,7 @@ export default async function AboutPage({
               ))}
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <Card className="border-0 shadow-lg bg-gradient-to-br from-blue-50 to-blue-100">
+              <Card className="border-0 shadow-lg bg-linear-to-br from-blue-50 to-blue-100">
                 <CardContent className="p-6 text-center">
                   <div className="flex justify-center mb-4">
                     <div className="p-3 bg-blue-600 rounded-full">
@@ -71,7 +71,7 @@ export default async function AboutPage({
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border-0 shadow-lg bg-gradient-to-br from-teal-50 to-teal-100">
+              <Card className="border-0 shadow-lg bg-linear-to-br from-teal-50 to-teal-100">
                 <CardContent className="p-6 text-center">
                   <div className="flex justify-center mb-4">
                     <div className="p-3 bg-teal-600 rounded-full">
@@ -86,7 +86,7 @@ export default async function AboutPage({
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border-0 shadow-lg bg-gradient-to-br from-red-50 to-red-100">
+              <Card className="border-0 shadow-lg bg-linear-to-br from-red-50 to-red-100">
                 <CardContent className="p-6 text-center">
                   <div className="flex justify-center mb-4">
                     <div className="p-3 bg-red-600 rounded-full">
@@ -109,10 +109,10 @@ export default async function AboutPage({
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <Card className="border-0 shadow-xl bg-gradient-to-br from-red-600 to-red-700 text-white hover:shadow-2xl transition-shadow">
+            <Card className="border-0 shadow-xl bg-linear-to-br from-red-600 to-red-700 text-white hover:shadow-2xl transition-shadow">
               <CardContent className="p-8">
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="p-3 bg-white/20 rounded-xl backdrop-blur-sm">
+                  <div className="p-3 bg-white/20 rounded-xl backdrop-blur-xs">
                     <Target className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold">
@@ -125,10 +125,10 @@ export default async function AboutPage({
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-xl bg-gradient-to-br from-teal-600 to-teal-700 text-white hover:shadow-2xl transition-shadow">
+            <Card className="border-0 shadow-xl bg-linear-to-br from-teal-600 to-teal-700 text-white hover:shadow-2xl transition-shadow">
               <CardContent className="p-8">
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="p-3 bg-white/20 rounded-xl backdrop-blur-sm">
+                  <div className="p-3 bg-white/20 rounded-xl backdrop-blur-xs">
                     <Target className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold">
@@ -141,10 +141,10 @@ export default async function AboutPage({
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-xl bg-gradient-to-br from-blue-600 to-blue-700 text-white hover:shadow-2xl transition-shadow">
+            <Card className="border-0 shadow-xl bg-linear-to-br from-blue-600 to-blue-700 text-white hover:shadow-2xl transition-shadow">
               <CardContent className="p-8">
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="p-3 bg-white/20 rounded-xl backdrop-blur-sm">
+                  <div className="p-3 bg-white/20 rounded-xl backdrop-blur-xs">
                     <Eye className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold">
@@ -249,7 +249,7 @@ export default async function AboutPage({
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-teal-50 to-blue-50">
+      <section className="py-20 bg-linear-to-br from-teal-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
@@ -296,7 +296,7 @@ export default async function AboutPage({
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-800/90"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-slate-900/90 to-slate-800/90"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

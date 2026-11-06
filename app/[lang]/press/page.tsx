@@ -18,9 +18,9 @@ export default async function PressPage({
 
   return (
     <>
-      <section className="relative py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 text-white overflow-hidden">
+      <section className="relative py-24 bg-linear-to-br from-slate-900 via-slate-800 to-blue-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 animate-pulse"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-cyan-500 animate-pulse"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -115,7 +115,7 @@ export default async function PressPage({
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-16 bg-linear-to-br from-slate-50 to-blue-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="border-0 shadow-xl">
             <CardContent className="p-8 text-center">

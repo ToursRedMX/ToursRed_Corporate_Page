@@ -101,15 +101,15 @@ export function ExoticcaPageClient({ lang, dict }: ExoticcaPageClientProps) {
           </ol>
         </nav>
 
-        <div className="bg-gradient-to-r from-black via-slate-900 to-slate-800 rounded-lg shadow-lg p-6 md:p-8 mb-8 text-white">
+        <div className="bg-linear-to-r from-black via-slate-900 to-slate-800 rounded-lg shadow-lg p-6 md:p-8 mb-8 text-white">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">{dict.hero.title}</h1>
           <p className="text-lg mb-6 text-slate-100">
             {dict.hero.subtitle}
           </p>
 
-          <div className="bg-yellow-400/20 backdrop-blur-sm rounded-lg p-4 mb-4 border border-yellow-400/40">
+          <div className="bg-yellow-400/20 backdrop-blur-xs rounded-lg p-4 mb-4 border border-yellow-400/40">
             <div className="flex items-start space-x-3">
-              <Info className="h-6 w-6 flex-shrink-0 mt-0.5 text-yellow-400" />
+              <Info className="h-6 w-6 shrink-0 mt-0.5 text-yellow-400" />
               <div>
                 <p className="font-semibold mb-2 text-yellow-400">{dict.howItWorks.title}</p>
                 <p className="text-sm text-slate-100">
@@ -120,7 +120,7 @@ export function ExoticcaPageClient({ lang, dict }: ExoticcaPageClientProps) {
           </div>
 
           <div className="bg-yellow-400 text-slate-900 rounded-lg p-4 mb-6 flex items-start space-x-3">
-            <ExternalLink className="h-6 w-6 flex-shrink-0 mt-0.5" />
+            <ExternalLink className="h-6 w-6 shrink-0 mt-0.5" />
             <p className="text-sm font-medium">
               {dict.exploreNotice || 'Al hacer clic en "Explorar Tours", se abrirá una nueva ventana con el catálogo completo de Exoticca donde podrás ver todos los destinos disponibles, precios y hacer tu reservación directamente.'}
             </p>
@@ -163,7 +163,7 @@ export function ExoticcaPageClient({ lang, dict }: ExoticcaPageClientProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {destinations.map((dest: string, index: number) => (
               <div key={index} className="flex items-start space-x-3 p-4 bg-slate-50 rounded-lg">
-                <MapPin className="h-5 w-5 text-pink-500 flex-shrink-0 mt-0.5" />
+                <MapPin className="h-5 w-5 text-pink-500 shrink-0 mt-0.5" />
                 <p className="text-slate-700">{dest}</p>
               </div>
             ))}
@@ -177,7 +177,7 @@ export function ExoticcaPageClient({ lang, dict }: ExoticcaPageClientProps) {
           </div>
         </div>
 
-        <div className="bg-slate-100 border border-slate-300 rounded-lg shadow-sm p-6 mb-8">
+        <div className="bg-slate-100 border border-slate-300 rounded-lg shadow-xs p-6 mb-8">
           <h3 className="text-lg font-bold text-slate-900 mb-4">{dict.legalNoticeTitle || 'Aviso Legal'}</h3>
           <div className="space-y-3 text-sm text-slate-700 leading-relaxed">
             <p>
@@ -192,7 +192,7 @@ export function ExoticcaPageClient({ lang, dict }: ExoticcaPageClientProps) {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-lg shadow-lg p-8 text-white text-center mb-8">
+        <div className="bg-linear-to-r from-slate-800 to-slate-900 rounded-lg shadow-lg p-8 text-white text-center mb-8">
           <h2 className="text-2xl font-bold mb-4">{dict.readyTitle || '¿Listo para tu próxima aventura?'}</h2>
           <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
             {dict.readySubtitle || 'Explora el catálogo completo de Exoticca, encuentra tu destino ideal y reserva con confianza. Si tienes dudas, nuestro equipo está listo para ayudarte.'}

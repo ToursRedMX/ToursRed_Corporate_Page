@@ -16,7 +16,7 @@ export default async function CookiesPage({
   return (
     <>
       <Section background="white" className="pt-20">
-        <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 md:p-12 text-white max-w-4xl mx-auto shadow-xl">
+        <div className="bg-linear-to-br from-slate-800 to-slate-900 rounded-2xl p-8 md:p-12 text-white max-w-4xl mx-auto shadow-xl">
           <Link href={`/${lang}/legal`}>
             <Button
               variant="ghost"
@@ -42,7 +42,7 @@ export default async function CookiesPage({
 
       <Section background="gray">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-xl p-8 md:p-12 shadow-sm">
+          <div className="bg-white rounded-xl p-8 md:p-12 shadow-xs">
             <div className="prose prose-lg max-w-none text-gray-700">
               <div dangerouslySetInnerHTML={{ __html: dict.legal.sections.cookies.content }} />
             </div>
